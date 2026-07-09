@@ -343,6 +343,47 @@ table tr.highlight td { background: #FDEEEA; font-weight: 600; color: var(--navy
   background-position: left center;
   display: block;
 }
+/* IMG Comparison Notes */
+.img-compare {
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0.85rem 0;
+  border: 1px solid var(--border);
+  font-size: 0.79rem;
+}
+.img-compare-align {
+  background: var(--green-light);
+  border-left: 3px solid var(--green);
+  padding: 0.55rem 0.8rem;
+  line-height: 1.55;
+  color: var(--text);
+}
+.img-compare-further {
+  background: #EEF2FF;
+  border-left: 3px solid var(--navy);
+  padding: 0.55rem 0.8rem;
+  line-height: 1.55;
+  color: var(--text);
+}
+.img-compare-gap {
+  background: var(--amber-light);
+  border-left: 3px solid var(--amber);
+  padding: 0.55rem 0.8rem;
+  line-height: 1.55;
+  color: var(--text);
+}
+.img-compare-label {
+  font-size: 0.63rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+.img-compare-align .img-compare-label { color: var(--green); }
+.img-compare-further .img-compare-label { color: var(--navy); }
+.img-compare-gap .img-compare-label { color: var(--amber); }
+
 </style>
 </head>
 <body>
@@ -718,7 +759,7 @@ table tr.highlight td { background: #FDEEEA; font-weight: 600; color: var(--navy
     <div class="card">
       <div class="card-label"><span class="dot amber"></span> CMS Platform</div>
       <div class="big-stat warning" style="font-size:2rem">Duda</div>
-      <div class="stat-sub">AMG does not work within Duda &mdash; WordPress rebuild required to deploy the full SEO program</div>
+      <div class="stat-sub">We&rsquo;ll need to assess the Duda CMS &mdash; Abstrakt&rsquo;s full content and optimization program runs on WordPress; platform fit will be discussed</div>
     </div>
     <div class="card">
       <div class="card-label"><span class="dot green"></span> Pages Crawled</div>
@@ -740,7 +781,7 @@ table tr.highlight td { background: #FDEEEA; font-weight: 600; color: var(--navy
   <div class="card-grid cols-2">
     <div class="card">
       
-      <div class="issue-item"><div class="issue-icon error">!</div><div><strong>Duda CMS &mdash; AMG does not work within Duda.</strong> A WordPress rebuild is required to deploy keyword-targeted landing pages, blog content, schema markup, and ongoing technical optimization at scale.</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>Duda CMS &mdash; platform assessment needed.</strong> Abstrakt&rsquo;s full content and optimization program is built for WordPress. We&rsquo;ll assess what&rsquo;s possible within the current Duda build and discuss whether a migration makes sense given SI&rsquo;s goals.</div></div>
       <div class="issue-item"><div class="issue-icon error">!</div><div><strong>Duplicate title tags (2 pages)</strong> &mdash; homepage title reused on blog and services pages, sending mixed signals to Googlebot on keyword targeting</div></div>
       <div class="issue-item"><div class="issue-icon error">!</div><div><strong>Duplicate meta descriptions (2 pages)</strong> &mdash; same as above; reduces click-through potential in search results</div></div>
       <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>Low text-to-HTML ratio on all 18 content pages</strong> &mdash; thin content signal site-wide; no page has sufficient text density to rank competitively for commercial terms</div></div>
@@ -751,7 +792,7 @@ table tr.highlight td { background: #FDEEEA; font-weight: 600; color: var(--navy
     </div>
     <div class="card">
       
-      <p style="font-size:0.85rem;color:var(--text);line-height:1.65;margin-bottom:1rem">The good news: simpleinnovations.com is <strong>technically fast and clean</strong> &mdash; GTmetrix Grade A, 93% performance, 644ms LCP. This is not a broken site. It&rsquo;s a well-built site on the wrong platform for growth. Duda prevents the keyword-targeted content, flexible templating, and optimization depth an SEO program requires. The WordPress rebuild moves Simple Innovations onto a platform where every content investment can compound.</p>
+      <p style="font-size:0.85rem;color:var(--text);line-height:1.65;margin-bottom:1rem">simpleinnovations.com is <strong>technically fast and clean</strong> &mdash; GTmetrix Grade A, 93% performance, 644ms LCP. This is not a broken site. The key question is how much can be accomplished within the Duda CMS vs. what a WordPress migration would unlock in terms of content depth, template flexibility, and schema control. That assessment will shape the program scope.</p>
       <div class="audit-grid">
         <div class="ag-label">Site Health</div><div class="ag-value" style="color:var(--green)">89%</div>
         <div class="ag-label">GTmetrix Performance</div><div class="ag-value" style="color:var(--green)">93%</div>
@@ -759,6 +800,10 @@ table tr.highlight td { background: #FDEEEA; font-weight: 600; color: var(--navy
         <div class="ag-label">Total Blocking Time</div><div class="ag-value" style="color:var(--green)">187ms</div>
         <div class="ag-label">AI Search Health</div><div class="ag-value" style="color:var(--green)">99%</div>
         <div class="ag-label">HTTPS / Canonicalization</div><div class="ag-value" style="color:var(--green)">Active</div>
+      </div>
+      <div class="img-compare" style="margin-top:1rem">
+        <div class="img-compare-align"><span class="img-compare-label">&#10003; Aligned with IMG</span>Page speed was flagged as a priority. Finding: already solved &mdash; GTmetrix Grade A, 93% performance, 644ms LCP. No action needed here.</div>
+        <div class="img-compare-further"><span class="img-compare-label">&#8593; Abstrakt goes further</span>Rather than optimizing what&rsquo;s already fast, we identify the structural constraint &mdash; the CMS platform &mdash; that limits what optimization can actually unlock at scale.</div>
       </div>
       
     </div>
@@ -836,7 +881,12 @@ table tr.highlight td { background: #FDEEEA; font-weight: 600; color: var(--navy
             <tr style="background:var(--red-light)"><td style="color:var(--red);font-weight:600">Transactional</td><td>0</td><td>0%</td><td>0</td></tr>
           </tbody>
         </table>
-        <div style="background:var(--red-light);border-left:3px solid var(--red);border-radius:0 6px 6px 0;padding:0.55rem 0.75rem;margin-top:0.75rem;font-size:0.8rem;color:var(--text)">
+        
+    <div class="img-compare">
+      <div class="img-compare-gap"><span class="img-compare-label">&#9888; IMG gap</span>IMG&rsquo;s keyword list included no ranking baseline &mdash; making it impossible to measure progress or separate real growth from normal fluctuations.</div>
+      <div class="img-compare-further"><span class="img-compare-label">&#8593; Abstrakt goes further</span>We establish a verified baseline before any work begins: 11 current keywords (all branded), 67 visits/month, Authority Score 8. Every metric in this audit becomes a benchmark for Month 3 and Month 6 reporting.</div>
+    </div>
+    <div style="background:var(--red-light);border-left:3px solid var(--red);border-radius:0 6px 6px 0;padding:0.55rem 0.75rem;margin-top:0.75rem;font-size:0.8rem;color:var(--text)">
           <strong style="color:var(--red)">Zero commercial or transactional intent keywords.</strong> Every visit comes from someone already looking for &ldquo;simple innovations&rdquo; by name. Buyers with budget &mdash; searching for embedded engineering services, firmware development, or IoT design &mdash; are invisible to this site.
         </div>
       </div>
@@ -870,6 +920,11 @@ table tr.highlight td { background: #FDEEEA; font-weight: 600; color: var(--navy
   </div>
   
 
+  
+  <div class="img-compare" style="margin-top:1rem">
+    <div class="img-compare-gap"><span class="img-compare-label">&#9888; IMG gap</span>No competitive analysis was included in IMG&rsquo;s documentation. Their strategy was built without knowing where competitors rank, what keywords they own, or what search volume SI is leaving on the table.</div>
+    <div class="img-compare-further"><span class="img-compare-label">&#8593; Abstrakt goes further</span>Full competitor keyword gap analysis against ByteSnap, DojoFive, and Arshon &mdash; 30+ documented gaps, 5,000+ monthly uncaptured searches, and a defensible cluster share metric. Strategy built on evidence, not assumption.</div>
+  </div>
   <p style="font-size:0.88rem;color:var(--text);line-height:1.65;max-width:780px;margin-bottom:1.25rem">The numbers first: how Simple Innovations&rsquo; organic footprint stacks up against the US embedded engineering firms capturing its market&rsquo;s search demand.</p>
 
   <div class="card span-4">
@@ -1064,6 +1119,11 @@ table tr.highlight td { background: #FDEEEA; font-weight: 600; color: var(--navy
   <div class="card-grid cols-4" style="margin-bottom:1rem">
     <div class="card">
       
+  
+  <div class="img-compare" style="margin-bottom:1rem">
+    <div class="img-compare-gap"><span class="img-compare-label">&#9888; IMG gap</span>Local SEO and citation health were not addressed anywhere in IMG&rsquo;s recommendations. No mention of GBP, directory presence, or NAP consistency.</div>
+    <div class="img-compare-further"><span class="img-compare-label">&#8593; Abstrakt goes further</span>This audit identifies 4 active NAP conflicts: 3 directories still show the old Plainview Road address, and GoLocal247 lists a wrong phone number. These actively redirect buyers to the wrong location. Citation cleanup and GBP management are included in the standard Abstrakt program.</div>
+  </div>
       <div class="card-label"><span class="dot amber"></span> NAP Audit</div>
       <div style="font-size:0.82rem;line-height:1.8">
         <div><strong>Name:</strong> Simple Innovations, Inc.</div>
@@ -1129,21 +1189,20 @@ table tr.highlight td { background: #FDEEEA; font-weight: 600; color: var(--navy
     <div class="plan-card">
       <div class="plan-card-header">
         <div style="width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:900;color:white;flex-shrink:0">1</div>
-        <span class="step-title">Website Rebuild</span>
+        <span class="step-title">Platform &amp; Build</span>
       </div>
       <div class="plan-card-body">
         
-        <p style="font-size:0.8rem;color:var(--muted);margin-bottom:0.75rem">simpleinnovations.com is fast and clean &mdash; but Duda prevents the content depth, flexible templating, and optimization control an SEO program requires. The WordPress rebuild is the unlock. Every content investment made after launch compounds on a platform built for SEO.</p>
+        <p style="font-size:0.8rem;color:var(--muted);margin-bottom:0.75rem">simpleinnovations.com is fast and clean. Before committing to a platform migration, we assess what&rsquo;s achievable within Duda vs. what a WordPress build unlocks. If migration is the right call, we rebuild on a platform where every content investment compounds. If Duda can support the program, we start there.</p>
         <h4>What we build</h4>
         <ul>
-          <li>30-page WordPress site &mdash; live in 90 days on a conversion-focused framework</li>
-          <li>15,000 words of keyword-targeted website copy covering firmware, IoT, hardware, and geo pages</li>
-          <li>Schema markup (LocalBusiness, Service, FAQ) built in from day one</li>
-          <li>llms.txt and AI-search-ready structured content throughout</li>
-          <li>Fix duplicate title tags, missing H1s, and canonical issue on the IoT page</li>
-          <li>WordPress hosting with 24/7 uptime monitoring included</li>
+          <li>Platform assessment: evaluate Duda capability vs. WordPress migration for SI&rsquo;s content goals</li>
+          <li>If WordPress migration: 30-page site live in 90 days with 15,000 words of keyword-targeted copy</li>
+          <li>Schema markup (LocalBusiness, Service, FAQ) and llms.txt deployed from day one</li>
+          <li>Fix duplicate title tags, missing H1s, and canonical issue on the IoT page regardless of platform</li>
+          <li>WordPress hosting with 24/7 uptime monitoring included if migration proceeds</li>
         </ul>
-        <div class="callout">Duda is the ceiling. WordPress is the runway.</div>
+        <div class="callout">We meet SI where the site is &mdash; and plan the fastest path to full SEO capability from there.</div>
       
       </div>
     </div>
@@ -1295,9 +1354,24 @@ table tr.highlight td { background: #FDEEEA; font-weight: 600; color: var(--navy
 
       <div class="card" style="border:2px solid var(--coral)">
         <div style="position:absolute;top:0;right:1rem;background:var(--coral);color:var(--white);font-size:0.58rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:0.2rem 0.6rem;border-radius:0 0 4px 4px">Recommended</div>
+        <div style="font-size:1.1rem;font-weight:800;color:var(--charcoal);margin-bottom:0.25rem">SEO Content Program</div>
+        <div style="font-size:1.8rem;font-weight:900;color:var(--navy);margin-bottom:0.25rem">$2,250<span style="font-size:0.9rem;font-weight:400;color:var(--muted)">/mo</span></div>
+        <div style="font-size:0.72rem;color:var(--muted);margin-bottom:1rem">Grow organic visibility now while Duda platform options are assessed</div>
+        <div style="display:flex;flex-direction:column;gap:0.35rem">
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> 4,000+ words/month targeting the keyword gaps in this audit</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> On-page optimization &mdash; meta tags, H-tags, internal linking, schema</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Technical SEO: crawl errors, broken links &amp; sitemap remediation</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> AI search optimization &mdash; built for Google + AI Overviews + LLMs</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Monthly local listing optimization + GBP management</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Hosting + monthly site health monitoring included</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Dedicated account manager + monthly results reporting</div>
+        </div>
+      </div>
+
+      <div class="card">
         <div style="font-size:1.1rem;font-weight:800;color:var(--charcoal);margin-bottom:0.25rem">Website + SEO Content Program</div>
         <div style="font-size:1.8rem;font-weight:900;color:var(--navy);margin-bottom:0.25rem">$2,500<span style="font-size:0.9rem;font-weight:400;color:var(--muted)">/mo</span></div>
-        <div style="font-size:0.72rem;color:var(--muted);margin-bottom:1rem">New 30-page WordPress website + ongoing SEO growth program</div>
+        <div style="font-size:0.72rem;color:var(--muted);margin-bottom:1rem">If platform migration to WordPress makes sense for SI&rsquo;s growth goals</div>
         <div style="display:flex;flex-direction:column;gap:0.35rem">
           <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> 30-page conversion-focused WordPress site &mdash; live in 90 days</div>
           <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> 15,000 words of keyword-targeted website copy</div>
@@ -1305,21 +1379,6 @@ table tr.highlight td { background: #FDEEEA; font-weight: 600; color: var(--navy
           <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> 3,000+ words/month of SEO content post-launch</div>
           <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Monthly local listing optimization + GBP management</div>
           <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Website hosting, site health monitoring &amp; 24/7 support</div>
-          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Dedicated account manager + monthly results reporting</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div style="font-size:1.1rem;font-weight:800;color:var(--charcoal);margin-bottom:0.25rem">SEO Content Program</div>
-        <div style="font-size:1.8rem;font-weight:900;color:var(--navy);margin-bottom:0.25rem">$2,250<span style="font-size:0.9rem;font-weight:400;color:var(--muted)">/mo</span></div>
-        <div style="font-size:0.72rem;color:var(--muted);margin-bottom:1rem">For an existing website that&rsquo;s ready to rank</div>
-        <div style="display:flex;flex-direction:column;gap:0.35rem">
-          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> 4,000+ words/month targeting the keyword gaps in this audit</div>
-          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> On-page optimization &mdash; meta tags, H-tags, internal linking, schema</div>
-          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Technical SEO: crawl error, broken link &amp; sitemap remediation</div>
-          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> AI search optimization &mdash; built for Google + AI Overviews + LLMs</div>
-          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Monthly local listing optimization + GBP management</div>
-          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Hosting + monthly site health monitoring included</div>
           <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Dedicated account manager + monthly results reporting</div>
         </div>
       </div>
@@ -1353,6 +1412,15 @@ table tr.highlight td { background: #FDEEEA; font-weight: 600; color: var(--navy
       </div>
 
     </div>
+  </div>
+
+  <div class="img-compare" style="margin-top:1.25rem">
+    <div class="img-compare-align"><span class="img-compare-label">&#10003; Aligned with IMG</span>IMG recommended allowing AI crawlers (GPTBot, ClaudeBot, PerplexityBot) via robots.txt &mdash; and SI&rsquo;s site already has llms.txt in place. The instinct is correct.</div>
+    <div class="img-compare-further"><span class="img-compare-label">&#8593; Abstrakt goes further</span>AI crawler access is part of a full discoverability strategy, not a standalone config update. We validate crawl consistency, structured data, sitemap health, and content accessibility so when AI engines crawl, they find content worth citing across every service page.</div>
+  </div>
+  <div class="img-compare">
+    <div class="img-compare-gap"><span class="img-compare-label">&#9888; IMG approach: Toxic backlink disavow</span>IMG recommended disavowing a list of low-authority backlinks. Modern Google generally discounts spam links automatically &mdash; absent a manual action or penalty, large-scale disavow work has limited measurable impact on rankings.</div>
+    <div class="img-compare-further"><span class="img-compare-label">&#8593; Abstrakt&rsquo;s approach: Build authority forward</span>We check Search Console for active manual actions first. If none exist, we redirect that effort toward acquiring industry-relevant links &mdash; partner associations, technical publications, DA-40+ placements. Long-term SEO growth comes from building authoritative relevance, not removing links Google is likely already ignoring.</div>
   </div>
 
   <div class="card-grid cols-2" style="margin-bottom:1rem">
