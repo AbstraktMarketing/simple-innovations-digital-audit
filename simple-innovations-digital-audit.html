@@ -1,0 +1,1756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Digital Health and Performance Assessment for Simple Innovations, Inc. — site audit, keyword analysis, and recommended SEO solution.">
+<meta property="og:title" content="Simple Innovations, Inc. — Digital Health &amp; Performance Assessment">
+<meta property="og:description" content="Comprehensive SEO audit, competitor gap analysis, and recommended solution prepared by Abstrakt Marketing Group.">
+<meta property="og:type" content="article">
+<title>Simple Innovations, Inc. — Digital Health &amp; Performance Assessment</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #13305C;
+  --navy-dark: #0E2245;
+  --navy-light: #294E86;
+  --coral: #FF5A3C;
+  --aqua: #2BD4C4;
+  --off-white: #F6F7FA;
+  --white: #FFFFFF;
+  --charcoal: #1A1A1A;
+  --text: #2D2D2D;
+  --muted: #8A8A8A;
+  --light-gray: #ECEEF3;
+  --border: #E2E4EA;
+  --green: #0B857B;
+  --green-light: #E4F8F6;
+  --red: #D43A1E;
+  --red-light: #FDEEEA;
+  --amber: #D4920A;
+  --amber-light: #FFF8E1;
+  --blue: #294E86;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: var(--off-white);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cover {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  overflow: hidden;
+}
+.cover-left {
+  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-dark) 100%);
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.cover-left .cover-logo { flex-shrink: 0; }
+.cover-left .cover-content { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.5rem 0; }
+.cover-left .cover-footer { flex-shrink: 0; }
+.cover-left::before {
+  content: '';
+  position: absolute;
+  top: -90px; right: -90px;
+  width: 320px; height: 320px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,90,60,0.42);
+  opacity: 0.5;
+}
+.cover-left .ring-aqua {
+  position: absolute;
+  top: -30px; right: 20px;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  border: 1px solid rgba(43,212,196,0.45);
+  opacity: 0.5;
+  pointer-events: none;
+}
+.platform-tags { display: flex; gap: 0.4rem; margin-top: 0.9rem; flex-wrap: wrap; }
+.platform-tag {
+  font-size: 0.62rem; font-weight: 600; padding: 0.2rem 0.7rem;
+  border-radius: 20px; border: 1px solid rgba(255,90,60,0.42);
+  color: var(--coral); letter-spacing: 0.05em;
+}
+.cover-left::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+}
+.cover-badge {
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em;
+  text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 0.75rem;
+}
+.cover-title {
+  font-size: 3.2rem; font-weight: 800; color: var(--white);
+  line-height: 1.1; margin-bottom: 0; letter-spacing: -0.02em;
+}
+.cover-title span {
+  display: block; font-weight: 300; font-size: 0.95rem;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin-top: 1.25rem; color: rgba(255,255,255,0.5);
+}
+.cover-divider { width: 64px; height: 3px; background: rgba(255,255,255,0.35); margin: 0 0 1rem 0; }
+.cover-client { font-size: 1.2rem; font-weight: 500; color: var(--white); }
+.cover-url { font-size: 0.85rem; color: rgba(255,255,255,0.4); margin-top: 0.2rem; }
+.cover-right {
+  padding: 2.5rem 2.25rem;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: stretch;
+  gap: 1rem; min-width: 0;
+}
+.cover-right > .summary-card { width: 100%; }
+.cover-right .summary-card { padding: 1.25rem 1.5rem; }
+.cover-right .summary-card h3 { margin-bottom: 0.85rem; }
+
+.audit-grid {
+  display: grid; grid-template-columns: auto 1fr auto 1fr;
+  column-gap: 1.25rem; row-gap: 0.55rem;
+  font-size: 0.85rem; align-items: baseline;
+}
+.audit-grid .ag-label { font-weight: 600; color: var(--text); white-space: nowrap; }
+.audit-grid .ag-value { font-weight: 800; color: var(--text); white-space: nowrap; }
+.audit-grid .ag-value.accent { color: var(--red); }
+.audit-grid .ag-value.warn { color: var(--amber); }
+
+.cover-right .opportunity-list li { font-size: 0.82rem; padding-left: 1.1rem; }
+
+.comp-body { display: grid; grid-template-columns: 132px 1fr; gap: 1rem; align-items: center; }
+.comp-pie { width: 132px; height: 132px; }
+.comp-pie .pie-label {
+  font-size: 4.2px; font-weight: 800; fill: #fff;
+  text-anchor: middle; dominant-baseline: central; font-family: inherit;
+}
+.comp-legend {
+  display: grid; grid-template-columns: auto auto;
+  column-gap: 1.25rem; row-gap: 0.35rem;
+  font-size: 0.82rem; align-items: center; justify-content: start;
+}
+.comp-legend .cl-name { font-weight: 700; }
+.comp-legend .cl-pct { color: var(--muted); font-weight: 600; }
+
+.summary-card {
+  background: var(--white); border-radius: 12px;
+  padding: 1.5rem; border: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.summary-card h3 {
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--navy); margin-bottom: 1rem;
+}
+
+.opportunity-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.opportunity-list li {
+  font-size: 0.85rem; color: var(--text);
+  padding-left: 1.2rem; position: relative;
+}
+.opportunity-list li::before {
+  content: '→'; position: absolute; left: 0;
+  color: var(--navy); font-weight: 700;
+}
+
+section { padding: 4rem 3rem; max-width: 1300px; margin: 0 auto; }
+.section-header {
+  display: flex; align-items: center; gap: 1rem;
+  margin-bottom: 2.5rem; padding-bottom: 1rem;
+  border-bottom: 2px solid var(--navy);
+}
+.section-number {
+  width: 36px; height: 36px; background: var(--navy);
+  color: var(--white); font-weight: 800; font-size: 0.85rem;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 6px; flex-shrink: 0;
+}
+.section-title { font-size: 1.6rem; font-weight: 800; color: var(--charcoal); letter-spacing: -0.01em; }
+
+.card-grid { display: grid; gap: 1rem; }
+.card-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.card-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+.card-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+.card-grid.cols-2-1 { grid-template-columns: 2fr 1fr; }
+.card-grid.cols-1-2 { grid-template-columns: 1fr 2fr; }
+
+.card {
+  background: var(--white); border-radius: 10px;
+  padding: 1.5rem; border: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  position: relative; overflow: hidden;
+}
+.card.span-2 { grid-column: span 2; }
+.card.span-3 { grid-column: span 3; }
+.card.span-4 { grid-column: span 4; }
+
+.card-label {
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--muted);
+  margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.4rem;
+}
+.card-label .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.dot.green { background: var(--green); }
+.dot.red { background: var(--red); }
+.dot.amber { background: var(--amber); }
+.dot.blue { background: var(--blue); }
+
+.big-stat { font-size: 2.8rem; font-weight: 800; line-height: 1; letter-spacing: -0.02em; }
+.big-stat.sm { font-size: 2rem; }
+.big-stat + .stat-sub { font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
+.big-stat.danger { color: var(--red); }
+.big-stat.warning { color: var(--amber); }
+.big-stat.success { color: var(--green); }
+.big-stat.neutral { color: var(--charcoal); }
+
+.badge {
+  display: inline-block; font-size: 0.7rem; font-weight: 600;
+  padding: 0.15rem 0.5rem; border-radius: 4px; letter-spacing: 0.03em;
+}
+.badge.green { background: var(--green-light); color: var(--green); }
+.badge.red { background: var(--red-light); color: var(--red); }
+.badge.amber { background: var(--amber-light); color: var(--amber); }
+
+table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+table th {
+  background: var(--navy); color: var(--white);
+  font-weight: 600; font-size: 0.7rem; letter-spacing: 0.06em;
+  text-transform: uppercase; padding: 0.6rem 0.75rem; text-align: left;
+}
+table td { padding: 0.55rem 0.75rem; border-bottom: 1px solid var(--border); color: var(--text); }
+table tr:nth-child(even) td { background: var(--light-gray); }
+table tr.highlight td { background: #FDEEEA; font-weight: 600; color: var(--navy); }
+
+.issue-item {
+  display: flex; align-items: flex-start; gap: 0.5rem;
+  padding: 0.5rem 0; font-size: 0.82rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+.issue-item:last-child { border-bottom: none; }
+.issue-icon {
+  width: 18px; height: 18px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.6rem; font-weight: 800; color: var(--white); margin-top: 1px;
+}
+.issue-icon.error { background: var(--red); }
+.issue-icon.warn { background: var(--amber); }
+
+.header-tree { font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; line-height: 2; }
+.header-tree .tag { font-weight: 600; }
+.header-tree .h1 { color: var(--navy); }
+.header-tree .h2 { color: var(--blue); }
+.header-tree .h4 { color: var(--muted); }
+.header-tree .miss { color: var(--red); font-style: italic; font-weight: 600; }
+.header-tree .indent { padding-left: 1.5rem; }
+.header-tree .page-label {
+  display: block; color: var(--navy); font-weight: 700; margin-top: 0.5rem;
+  padding-top: 0.5rem; border-top: 1px solid var(--border);
+}
+.header-tree .page-label:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+
+.gap-hero { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem; }
+.gap-hero-card {
+  background: var(--white); border-radius: 12px; padding: 2rem;
+  text-align: center; border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.gap-hero-card .number { font-size: 4rem; font-weight: 900; line-height: 1; letter-spacing: -0.03em; }
+.gap-hero-card .label { font-size: 1rem; font-weight: 600; color: var(--charcoal); margin-top: 0.25rem; }
+.gap-hero-card .sub { font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
+
+.rank-bar {
+  display: flex; align-items: center; gap: 0.75rem;
+  padding: 0.6rem 0.75rem; border-radius: 6px;
+  margin-bottom: 0.4rem; font-size: 0.85rem;
+}
+.rank-bar .name { flex: 1; font-weight: 500; }
+.rank-bar .score { font-weight: 800; font-size: 0.95rem; }
+.rank-bar.winner { background: var(--green-light); }
+.rank-bar.loser { background: var(--red-light); }
+.rank-bar.neutral { background: var(--light-gray); }
+
+.plan-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.plan-card {
+  background: var(--white); border-radius: 12px;
+  border: 1px solid var(--border); overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.plan-card-header {
+  background: var(--navy); padding: 1rem 1.25rem;
+  display: flex; align-items: center; gap: 0.75rem;
+}
+.plan-card-header .step { font-size: 1.4rem; font-weight: 900; color: rgba(255,255,255,0.4); }
+.plan-card-header .step-title {
+  font-size: 1rem; font-weight: 700; color: var(--white);
+  letter-spacing: 0.04em; text-transform: uppercase;
+}
+.plan-card-body { padding: 1.25rem; }
+.plan-card-body h4 { font-size: 0.9rem; font-weight: 700; color: var(--navy); margin-bottom: 0.75rem; }
+.plan-card-body ul { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+.plan-card-body li { font-size: 0.8rem; color: var(--text); padding-left: 1rem; position: relative; }
+.plan-card-body li::before { content: '•'; position: absolute; left: 0; color: var(--navy); font-weight: 700; }
+.plan-card-body .callout {
+  font-size: 0.75rem; color: var(--navy); font-style: italic;
+  margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border);
+}
+
+.full-divider { height: 4px; background: linear-gradient(90deg, var(--navy), var(--navy-light), var(--navy)); margin: 0; }
+
+.progress-bar { height: 6px; background: var(--light-gray); border-radius: 3px; overflow: hidden; margin-top: 0.5rem; }
+.progress-bar .fill { height: 100%; border-radius: 3px; }
+
+.share-bar { display: flex; height: 28px; border-radius: 6px; overflow: hidden; margin: 0.75rem 0; }
+.share-bar > div {
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.65rem; font-weight: 700; color: white;
+}
+
+@media (max-width: 900px) {
+  .cover { grid-template-columns: 1fr; }
+  .card-grid.cols-3, .card-grid.cols-4 { grid-template-columns: 1fr 1fr; }
+  .card-grid.cols-2-1, .card-grid.cols-1-2 { grid-template-columns: 1fr; }
+  .gap-hero, .plan-grid { grid-template-columns: 1fr; }
+  .cover-title { font-size: 2.2rem; }
+  section { padding: 2rem 1.5rem; }
+  .score-layout { grid-template-columns: 1fr !important; }
+  .cover-left::before, .cover-left .ring-aqua { display: none; }
+}
+
+@media print {
+  body { background: white; }
+  .cover { min-height: auto; page-break-after: always; }
+  section { page-break-inside: avoid; padding: 2rem 1rem; }
+  .full-divider { height: 2px; }
+  .card, .gap-hero-card, .plan-card, .summary-card { box-shadow: none; border: 1px solid #ddd; }
+  .share-bar > div { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  table th { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .progress-bar .fill { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+.amg-logo {
+  background-image: url("data:image/png;base64,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");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  display: block;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<div class="cover">
+  <div class="cover-left">
+    <div class="ring-aqua"></div>
+    <div class="cover-logo">
+      <div class="amg-logo" style="width:230px;height:29px"></div>
+    </div>
+    <div class="cover-content">
+      <div class="cover-badge">Prepared for William Lynt &middot; President</div>
+      <h1 class="cover-title">
+        Digital Health &amp;<br>Performance<br><span style="display:inline;font-weight:800;font-size:inherit;letter-spacing:inherit;text-transform:none;margin:0;color:var(--coral)">Assessment</span>
+        <span>Gap Analysis &middot; Recommended Solution</span>
+      </h1>
+    </div>
+    <div class="cover-footer">
+      <div class="cover-divider"></div>
+      <div class="cover-client">Simple Innovations, Inc.</div>
+      <div class="cover-url">simpleinnovations.com &middot; Embedded Engineering Services &middot; Sussex, WI</div>
+      <div class="platform-tags">
+        <div class="platform-tag">Google</div>
+        <div class="platform-tag">AI Overviews</div>
+        <div class="platform-tag">ChatGPT</div>
+        <div class="platform-tag">Perplexity</div>
+        <div class="platform-tag">Voice</div>
+      </div>
+      <div style="font-size:0.72rem;color:rgba(255,255,255,0.25);margin-top:0.75rem;letter-spacing:0.04em">July 2026 &middot; Confidential</div>
+    </div>
+  </div>
+  <div class="cover-right">
+
+    
+    <div class="summary-card">
+      <h3>Audit Summary</h3>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem">
+
+        <div style="border-top:3px solid var(--green);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Site Health</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--green);line-height:1">89%</div>
+          <div style="font-size:0.6rem;color:var(--muted);margin-top:0.1rem">Semrush Audit</div>
+        </div>
+
+        <div style="border-top:3px solid var(--red);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Authority Score</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--red);line-height:1">8</div>
+          <div style="font-size:0.6rem;color:var(--muted);margin-top:0.1rem">120 ref. domains</div>
+        </div>
+
+        <div style="border-top:3px solid var(--red);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Keywords</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--red);line-height:1">11</div>
+          <div style="font-size:0.6rem;color:var(--red);font-weight:700;margin-top:0.1rem">All branded</div>
+        </div>
+
+        <div style="border-top:3px solid var(--amber);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Branded Traffic</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--amber);line-height:1">84%</div>
+          <div style="font-size:0.6rem;color:var(--muted);margin-top:0.1rem">of all organic visits</div>
+        </div>
+
+        <div style="border-top:3px solid var(--red);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Organic Traffic</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--red);line-height:1">67</div>
+          <div style="font-size:0.6rem;color:var(--muted);margin-top:0.1rem">visits / month</div>
+        </div>
+
+        <div style="border-top:3px solid var(--green);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">AI Visibility</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--green);line-height:1">88<span style="font-size:0.7rem;font-weight:600;color:var(--muted)">/100</span></div>
+          <div style="font-size:0.6rem;color:var(--green);font-weight:600;margin-top:0.1rem">STRONG</div>
+        </div>
+
+      </div>
+    </div>
+
+    
+    <div class="summary-card">
+      <h3>Biggest Opportunities</h3>
+      <div style="display:flex;flex-direction:column;gap:0.5rem">
+        <div style="background:var(--red-light);border-left:3px solid var(--red);border-radius:0 6px 6px 0;padding:0.65rem 0.85rem">
+          <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);margin-bottom:0.25rem">Critical</div>
+          <div style="font-size:0.82rem;color:var(--text)"><strong>0 commercial keyword rankings &mdash; all 11 organic keywords are branded.</strong> Buyers searching &ldquo;embedded firmware development&rdquo; or &ldquo;IoT product development services&rdquo; cannot find Simple Innovations.</div>
+        </div>
+        <div style="background:var(--red-light);border-left:3px solid var(--red);border-radius:0 6px 6px 0;padding:0.65rem 0.85rem">
+          <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);margin-bottom:0.25rem">Critical</div>
+          <div style="font-size:0.82rem;color:var(--text)"><strong>Duda CMS blocks the SEO program &mdash; Abstrakt does not work within Duda.</strong> A WordPress rebuild is required to deploy the full content, optimization, and conversion program.</div>
+        </div>
+        <div style="background:var(--amber-light);border-left:3px solid var(--amber);border-radius:0 6px 6px 0;padding:0.65rem 0.85rem">
+          <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber);margin-bottom:0.25rem">High</div>
+          <div style="font-size:0.82rem;color:var(--text)"><strong>NAP conflicts in 3+ directories</strong> show the old Plainview Road address. GoLocal247 shows a wrong phone number. Citation inconsistency undermines local credibility before buyers make contact.</div>
+        </div>
+        <div style="background:var(--amber-light);border-left:3px solid var(--amber);border-radius:0 6px 6px 0;padding:0.65rem 0.85rem">
+          <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber);margin-bottom:0.25rem">High</div>
+          <div style="font-size:0.82rem;color:var(--text)"><strong>Authority Score 8</strong> vs. embedded engineering peers ByteSnap (AS 27) and DojoFive (AS 22). No backlink program running; domain credibility far below competitive threshold.</div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="summary-card">
+      <h3>US Search Market Position</h3>
+      <div style="display:flex;align-items:baseline;gap:0.75rem;margin-bottom:0.65rem">
+        <div style="font-size:2.8rem;font-weight:900;color:var(--red);line-height:1;letter-spacing:-0.03em">1.0%</div>
+        <div style="font-size:0.78rem;color:var(--text);line-height:1.4">Simple Innovations&rsquo; share<br>of peer keyword cluster</div>
+      </div>
+      <div style="height:18px;border-radius:4px;overflow:hidden;display:flex;margin-bottom:0.6rem">
+        <div style="width:66.5%;background:var(--charcoal);display:flex;align-items:center;padding-left:0.4rem"><span style="font-size:0.58rem;font-weight:700;color:#fff;white-space:nowrap">ByteSnap 66.5%</span></div>
+        <div style="width:32.5%;background:var(--navy);display:flex;align-items:center;padding-left:0.3rem"><span style="font-size:0.58rem;font-weight:700;color:#fff;white-space:nowrap">DojoFive 32.5%</span></div>
+        <div style="width:1%;background:var(--red)"></div>
+      </div>
+      <div style="font-size:0.75rem;color:var(--muted);margin-bottom:0.75rem">For every buyer who finds Simple Innovations, <strong style="color:var(--text)">98 find a competitor.</strong></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.4rem;font-size:0.76rem">
+        <div><span style="color:var(--muted)">SI traffic:</span> <strong style="color:var(--red)">67/mo</strong></div>
+        <div><span style="color:var(--muted)">ByteSnap traffic:</span> <strong style="color:var(--text)">439/mo</strong></div>
+        <div><span style="color:var(--muted)">SI keywords:</span> <strong style="color:var(--red)">11</strong></div>
+        <div><span style="color:var(--muted)">DojoFive keywords:</span> <strong style="color:var(--text)">358</strong></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="full-divider"></div>
+
+
+<div style="background:linear-gradient(135deg,var(--navy-dark) 0%,var(--navy) 100%);border-top:3px solid var(--coral);padding:0 3rem">
+  <div style="max-width:1300px;margin:0 auto;display:flex;align-items:stretch">
+
+    
+    <div style="display:flex;align-items:center;padding:1.6rem 2.5rem 1.6rem 0;border-right:1px solid rgba(255,255,255,0.08);flex-shrink:0">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 334.9 63.9" style="width:170px;height:32px;display:block">
+        <defs><style>.ib-cls-1{fill:none}.ib-cls-2{fill:#fff}.ib-cls-3{fill:#FF5A3C}</style></defs>
+        <g>
+          <g>
+            <g>
+              <path class="ib-cls-3" d="M247,39.4c-5.6,0-11.3-2-15.7-5.9l4.8-5.8c3.3,2.8,6.8,4.5,11.1,4.5,3.3,0,5.3-1.3,5.3-3.5v-.1c0-2.1-1.3-3.1-7.4-4.7-7.4-1.9-12.3-4-12.3-11.3v-.1c0-6.7,5.4-11.1,12.9-11.1,5.4,0,10,1.7,13.7,4.7l-4.2,6.1c-3.3-2.3-6.5-3.6-9.6-3.6s-4.8,1.4-4.8,3.2v.1c0,2.4,1.6,3.2,8,4.9,7.5,2,11.7,4.6,11.7,11.1v.1c.1,7.3-5.5,11.4-13.5,11.4z"/>
+              <path class="ib-cls-3" d="M279.1,38.9h-14.4V1.9h14.4c11.6,0,19.7,8,19.7,18.4v.1c0,10.4-8.1,18.5-19.7,18.5zM290.3,20.4c0-6.6-4.5-11.1-11.1-11.1h-6.3v22.3h6.3c6.6,0,11.1-4.5,11.1-11.2z"/>
+              <path class="ib-cls-3" d="M325.3,38.9l-7.9-11.8h-6.4v11.8h-8.1V1.9h16.9c8.7,0,14,4.6,14,12.2v.1c0,6-3.2,9.7-7.9,11.5l9,13.2h-9.6zM325.5,14.5c0-3.5-2.4-5.3-6.4-5.3h-8.1v10.6h8.2c4,0,6.2-2.1,6.2-5.2v-.1z"/>
+            </g>
+            <g>
+              <path class="ib-cls-2" d="M0,50h4.4c4.3,0,7.3,3,7.3,6.8h0c0,3.8-3,6.8-7.2,6.8H0v-13.6zM4.5,63c3.9,0,6.6-2.7,6.6-6.2h0c0-3.5-2.6-6.2-6.6-6.2H.7v12.4h3.8z"/>
+              <path class="ib-cls-2" d="M16.6,50h.7v13.6h-.7v-13.6z"/>
+              <path class="ib-cls-2" d="M22.2,56.8h0c0-3.7,2.6-7.1,6.7-7.1,2.1,0,3.5.6,4.8,1.8l-.3.5c-1.2-1-2.4-1.7-4.4-1.7-3.6,0-6,3.1-6,6.4h0c0,3.5,2.3,6.5,6.1,6.5,1.9,0,3.6-.8,4.7-1.8v-4.2h-4.9v-.6h5.5v5.1c-1.3,1.2-3.1,2.1-5.3,2.1-4.4.1-6.9-3.1-6.9-7z"/>
+              <path class="ib-cls-2" d="M39.5,50h.7v13.6h-.7v-13.6z"/>
+              <path class="ib-cls-2" d="M49.3,50.6h-4.8v-.6h10.4v.6h-4.9v13h-.7v-13z"/>
+              <path class="ib-cls-2" d="M62.4,49.9h.6l6.5,13.7h-.7l-1.8-4h-8.4l-1.9,4h-.7l6.4-13.7zM66.6,59l-3.9-8.4-3.9,8.4h7.8z"/>
+              <path class="ib-cls-2" d="M73.6,50h.7v13h8.2v.6h-8.9v-13.6z"/>
+              <path class="ib-cls-2" d="M92.7,61.6l.4-.5c1.4,1.4,3,2.1,5,2.1,2.4,0,3.9-1.3,3.9-3h0c0-1.6-.9-2.5-4.2-3.1-3.3-.7-4.6-1.7-4.6-3.7h0c0-2,1.8-3.5,4.4-3.5,1.9,0,3.3.6,4.6,1.6l-.4.5c-1.2-1-2.7-1.5-4.3-1.5-2.2,0-3.7,1.3-3.7,2.9h0c0,1.6.9,2.5,4.2,3.1,3.4.7,4.6,1.8,4.6,3.7h0c0,2.1-1.8,3.7-4.6,3.7-1.9-.1-3.7-.8-5.3-2.3z"/>
+              <path class="ib-cls-2" d="M107.4,50h9.6v.6h-8.9v5.9h8.1v.6h-8.1v6h9v.6h-9.7v-13.7z"/>
+              <path class="ib-cls-2" d="M127,49.9h.6l6.5,13.7h-.7l-1.9-4h-8.4l-1.9,4h-.7l6.5-13.7zM131.2,59l-3.9-8.4-3.9,8.4h7.8z"/>
+              <path class="ib-cls-2" d="M138.2,50h5.6c1.7,0,3.1.5,3.9,1.3.6.6,1,1.5,1,2.5h0c0,2.3-1.8,3.6-4.3,3.9l4.5,5.9h-.8l-4.4-5.8h-4.8v5.8h-.7v-13.6zM143.7,57.2c2.8,0,4.4-1.4,4.4-3.3h0c0-2-1.6-3.3-4.3-3.3h-4.9v6.6h4.8z"/>
+              <path class="ib-cls-2" d="M152.9,56.8h0c0-3.9,2.9-7.1,6.7-7.1,2.5,0,3.9.9,5.2,2.2l-.5.5c-1.1-1.1-2.5-2-4.8-2-3.5,0-6,2.9-6,6.4h0c0,3.5,2.6,6.4,6.1,6.4,2.1,0,3.6-.9,4.9-2.2l.5.5c-1.3,1.3-2.9,2.3-5.4,2.3-3.8.1-6.7-3.1-6.7-7z"/>
+              <path class="ib-cls-2" d="M169.1,50h.7v6.5h9.3v-6.5h.7v13.6h-.7v-6.6h-9.3v6.6h-.7v-13.6z"/>
+              <path class="ib-cls-2" d="M195.7,50.6h-4.9v-.6h10.4v.6h-4.9v13h-.7v-13z"/>
+              <path class="ib-cls-2" d="M205.4,50h.7v6.5h9.3v-6.5h.7v13.6h-.7v-6.6h-9.4v6.6h-.7v-13.6z"/>
+              <path class="ib-cls-2" d="M226.6,49.9h.6l6.5,13.7h-.7l-1.9-4h-8.4l-1.9,4h-.7l6.5-13.7zM230.9,59l-3.9-8.4-4,8.4h7.9z"/>
+              <path class="ib-cls-2" d="M239.7,50.6h-4.9v-.6h10.4v.6h-4.9v13h-.7v-13z"/>
+              <path class="ib-cls-2" d="M255.2,50h.7l4.3,12.7,4.1-12.7h.5l4.1,12.8,4.3-12.7h.7l-4.7,13.7h-.5l-4.1-12.5-4.1,12.5h-.5l-4.8-13.8z"/>
+              <path class="ib-cls-2" d="M276.8,56.8h0c0-3.8,2.7-7.1,6.8-7.1s6.8,3.3,6.8,7h0c0,3.7-2.7,7-6.8,7s-6.8-3.1-6.8-6.9zM289.8,56.9h0c0-3.5-2.5-6.5-6.1-6.5s-6.1,3-6.1,6.4h0c0,3.5,2.5,6.5,6.2,6.5s6-3,6-6.4z"/>
+              <path class="ib-cls-2" d="M295.3,50h5.6c1.7,0,3.1.5,3.9,1.3.6.6,1,1.5,1,2.5h0c0,2.3-1.8,3.6-4.3,3.9l4.5,5.9h-.8l-4.4-5.8h-4.8v5.8h-.7v-13.6zM300.7,57.2c2.8,0,4.4-1.4,4.4-3.3h0c0-2-1.6-3.3-4.3-3.3h-4.9v6.6h4.8z"/>
+              <path class="ib-cls-2" d="M310.7,50h.7v9.1l9.1-9.1h.9l-5.9,5.9,6.2,7.8h-.9l-5.8-7.3-3.6,3.6v3.7h-.7v-13.7z"/>
+              <path class="ib-cls-2" d="M324.8,61.6l.5-.5c1.4,1.4,3,2.1,5,2.1,2.4,0,3.9-1.3,3.9-3h0c0-1.6-.9-2.5-4.2-3.1-3.3-.7-4.6-1.7-4.6-3.7h0c0-2,1.9-3.5,4.4-3.5,1.9,0,3.4.6,4.6,1.6l-.4.5c-1.2-1-2.7-1.5-4.3-1.5-2.2,0-3.7,1.3-3.7,2.9h0c0,1.6.9,2.5,4.2,3.1,3.4.7,4.6,1.8,4.6,3.7h0c0,2.1-1.8,3.7-4.6,3.7-2.1-.1-3.8-.8-5.4-2.3z"/>
+            </g>
+            <path class="ib-cls-2" d="M147.9,24.5c0,8.9-4.8,13.4-12.2,13.4s-12.5-5-12.5-13.7V3h-2.7v21.5c0,10.3,6.3,15.9,15.1,15.9s15.1-5.6,15.1-16.2V3h-2.7l-.1,21.5z"/>
+            <polygon class="ib-cls-2" points="184.1 35 158.7 3 156.2 3 156.2 39.8 158.8 39.8 158.8 7.1 184.7 39.8 186.8 39.8 186.8 3 184.1 3 184.1 35"/>
+            <path class="ib-cls-2" d="M204.5,3h-12.2v36.8h12.2c11.6,0,19.6-8,19.6-18.4v-.1c0-10.3-8-18.3-19.6-18.3zM221.2,21.5c0,8.8-6.5,15.8-16.7,15.8h-9.5V5.5h9.5c10.2,0,16.7,7.2,16.7,15.9v.1z"/>
+            <path class="ib-cls-2" d="M65.6,20.9c3-1.2,6.3-3.7,6.3-8.7v-.1c0-5.5-4.8-9-11.9-9h-15.3v36.8h16c7.9,0,13.2-3.9,13.2-10v-.1c0-5.2-3.9-7.8-8.3-8.9zM47.4,5.5h12.4c5.9,0,9.2,2.7,9.2,6.8v.1c0,4.9-3.9,7.6-9.5,7.6h-12.1V5.5zM71.1,29.8c0,4.6-4,7.5-10.3,7.5h-13.4v-14.8h12.5c7.2,0,11.2,2.6,11.2,7.1v.2z"/>
+            <rect class="ib-cls-2" x="0" y="3" width="2.7" height="36.8"/>
+            <polygon class="ib-cls-2" points="36.4 35 11 3 8.4 3 8.4 39.8 11 39.8 11 7.1 37 39.8 39 39.8 39 3 36.4 3 36.4 35"/>
+            <g>
+              <path class="ib-cls-2" d="M96.4,0c-11.6,0-20.9,9.4-20.9,20.9s9.4,20.9,20.9,20.9c1.5,0,3-.2,4.4-.5-.1-.1-.1-.2-.2-.3l-.9-2.8c-.7.7-1.5,1.1-2.3,1.3v-8.8l-.6-1.9-.8-2.7-.7-2.3v4.5c-2.4,0-4.8.2-7,.6-.5-2.1-.8-4.5-.9-6.9h7.3l-.2-.6c-.2-.5-.1-1,.1-1.5h-7.2c.1-2.5.4-4.8.9-6.9,2.2.3,4.6.5,7,.6v5.4c.4-.3.8-.4,1.2-.4.3,0,.6.1.9.2v-5.4c2.4,0,4.8-.2,7-.6.5,2.1.8,4.5.9,6.9h-6.2l1.4.9,2.1,1.3h2.7c0,.5,0,1-.1,1.5l.6.4,1.4.9c.1-.9.2-1.8.2-2.8h7.6c-.1,2.3-.7,4.5-1.6,6.5l.1.1,1.6,1s.1,0,.1.1c1.2-2.6,1.9-5.6,1.9-8.7.1-11.6-9.2-20.9-20.7-20.9zM80.5,10.9c1.6.7,3.5,1.2,5.6,1.6-.5,2.2-.8,4.7-.9,7.3h-7.6c.2-3.3,1.3-6.3,2.9-8.9zM80.5,30.9c-1.7-2.6-2.7-5.7-2.9-9h7.6c.1,2.6.4,5.1.9,7.3-2.1.5-4,1.1-5.6,1.7zM95.3,30.5v9c-2.7-.7-5-3.9-6.4-8.5,2-.3,4.2-.5,6.4-.5zM90.4,38.7c-3.4-1.1-6.4-3.2-8.6-6,1.4-.5,3.1-1,4.8-1.4,1,3,2.3,5.6,3.8,7.4zM86.7,10.4c-1.8-.4-3.4-.8-4.8-1.4,2.2-2.7,5.2-4.8,8.6-6-1.6,1.9-2.9,4.4-3.8,7.4zM95.3,11.3c-2.2,0-4.4-.2-6.4-.5,1.4-4.6,3.8-7.8,6.4-8.5v9zM97.4,11.3V2.3c2.7.7,5,3.9,6.4,8.5-2,.3-4.2.4-6.4.5zM102.3,3.1c3.4,1.1,6.4,3.2,8.6,6-1.4.5-3,1-4.8,1.4-1-3.1-2.3-5.6-3.8-7.4zM107.5,19.8c-.1-2.6-.4-5.1-.9-7.3,2.1-.4,4-1,5.6-1.6,1.7,2.6,2.7,5.7,2.9,8.9h-7.6z"/>
+              <path class="ib-cls-3" d="M114.4,30.8l-1.6-1-5.7-3.4-2-1.2-5.3-3.2-2.9-1.8c-.1-.1-.2-.1-.3-.1-.4,0-.7.4-.6.8l1.5,4.8.8,2.7.7,2.2,2,6.4,1.1,3.6c.1.2.2.3.4.4h.2c.2,0,.3-.1.4-.2l.1-.1,2.1-4,2.4,3c.1.2.3.2.5.2.1,0,.3,0,.4-.1l3.3-2.7c.3-.2.3-.6.1-.9l-2.4-3,4.3-1.1h.1l.2-.1c.4-.1.6-.6.3-.9c0-.2,0-.3-.1-.3z"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    
+    <div style="flex:1;display:flex;align-items:stretch">
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--coral);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">2,000+</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Active Clients</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--coral);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">$1B+</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Revenue Generated</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem;background:rgba(255,90,60,0.12)">
+        <div style="width:24px;height:2px;background:var(--aqua);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">3.55x</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Avg. Client ROI</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--coral);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">200+</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Industry Awards</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--coral);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">Inc. 5000</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">10&times; Honoree</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--coral);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">100K+</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Appointments / Year</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number" style="background:var(--navy-dark)">&#9733;</div>
+    <h2 class="section-title">Digital Health Score</h2>
+  </div>
+
+  <div class="score-layout" style="display:grid;grid-template-columns:280px 1fr;gap:2rem;align-items:start">
+    <div class="card" style="text-align:center;padding:2rem">
+      <div style="position:relative;width:180px;height:180px;margin:0 auto 1rem">
+        
+        <!-- HEALTH_COLOR_HEX rule: <40 #D43A1E (coral) / 40-69 #D4920A (amber) / 70+ #0B857B (aqua-deep) -->
+        <svg viewBox="0 0 120 120" style="transform:rotate(-90deg)">
+          <circle cx="60" cy="60" r="52" fill="none" stroke="#E2E4EA" stroke-width="10"/>
+          <circle cx="60" cy="60" r="52" fill="none" stroke="#D4920A" stroke-width="10"
+                  stroke-dasharray="327" stroke-dashoffset="190" stroke-linecap="round"/>
+        </svg>
+        <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center">
+          <div style="font-size:3rem;font-weight:900;color:var(--amber);line-height:1">42</div>
+          <div style="font-size:0.75rem;color:var(--muted);font-weight:600">out of 100</div>
+        </div>
+      </div>
+      <div style="font-size:1.1rem;font-weight:800;color:var(--amber)">NEEDS WORK</div>
+      
+      <p style="font-size:0.88rem;color:var(--text);line-height:1.6;margin-top:0.5rem">A technically strong Duda website generating just 67 organic visits per month &mdash; 84% branded. Zero commercial keyword rankings. 1.0% of peer keyword cluster. The site is fast; the search footprint is invisible.</p>
+      
+    </div>
+
+    
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem">
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Site Health</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">89% Semrush health &middot; 4 errors &middot; 54 warnings &middot; no broken links</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--green)">85<span style="font-size:0.8rem;color:var(--muted)">/100 <em style="font-size:0.65rem">Est.</em></span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:85%;background:var(--green)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Site Speed</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">GTmetrix A &middot; 93% performance &middot; 644ms LCP &middot; 187ms TBT</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--green)">90<span style="font-size:0.8rem;color:var(--muted)">/100 <em style="font-size:0.65rem">Est.</em></span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:90%;background:var(--green)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Keyword Visibility</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">11 US keywords &middot; all branded &middot; 0 commercial or transactional rankings</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--red)">10<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:10%;background:var(--red)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Content Strategy</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">Service pages exist but have thin content; 18/18 pages flagged for low text-to-HTML ratio</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--red)">15<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:15%;background:var(--red)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Local SEO</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">5.0&#9733; GBP &middot; only 2 reviews &middot; 3 directories show old address &middot; absent from Bing &amp; MapQuest</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--red)">30<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:30%;background:var(--red)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Competitive Position</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">1.0% of peer keyword cluster &middot; ByteSnap holds 66.5% &middot; DojoFive 32.5%</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--red)">12<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:12%;background:var(--red)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Security &amp; Technical</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">HTTPS active &middot; GTmetrix A &middot; Duda CMS limits content &amp; optimization capabilities</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--amber)">65<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:65%;background:var(--amber)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">AI Search Readiness</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">Semrush AI Health 99% &middot; llms.txt present &middot; no AI crawlers blocked</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--green)">88<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:88%;background:var(--green)"></div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="display:flex;gap:2rem;margin-top:1.5rem;justify-content:center">
+    <div style="display:flex;align-items:center;gap:0.4rem;font-size:0.75rem;color:var(--muted)">
+      <div style="width:12px;height:12px;border-radius:3px;background:var(--green)"></div> 70&ndash;100 Strong
+    </div>
+    <div style="display:flex;align-items:center;gap:0.4rem;font-size:0.75rem;color:var(--muted)">
+      <div style="width:12px;height:12px;border-radius:3px;background:var(--amber)"></div> 40&ndash;69 Needs Work
+    </div>
+    <div style="display:flex;align-items:center;gap:0.4rem;font-size:0.75rem;color:var(--muted)">
+      <div style="width:12px;height:12px;border-radius:3px;background:var(--red)"></div> 0&ndash;39 Critical
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">01</div>
+    <h2 class="section-title">Website Performance</h2>
+  </div>
+
+  
+  <div class="card-grid cols-4" style="margin-bottom:1rem">
+    <div class="card">
+      <div class="card-label"><span class="dot amber"></span> CMS Platform</div>
+      <div class="big-stat warning" style="font-size:2rem">Duda</div>
+      <div class="stat-sub">AMG does not work within Duda &mdash; WordPress rebuild required to deploy the full SEO program</div>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot green"></span> Pages Crawled</div>
+      <div class="big-stat success">22</div>
+      <div class="stat-sub">2 healthy &middot; 19 have issues &middot; 1 redirect &middot; 0 broken</div>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot green"></span> GTmetrix Grade</div>
+      <div class="big-stat success">A</div>
+      <div class="stat-sub">Performance 93% &middot; LCP 644ms &middot; TBT 187ms &middot; CLS 0</div>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot green"></span> Security</div>
+      <div class="big-stat success" style="font-size:2rem">HTTPS Active</div>
+      <div class="stat-sub">Self-canonical throughout &middot; AI Search Health 99% &middot; no crawlers blocked</div>
+    </div>
+  </div>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      
+      <div class="issue-item"><div class="issue-icon error">!</div><div><strong>Duda CMS &mdash; AMG does not work within Duda.</strong> A WordPress rebuild is required to deploy keyword-targeted landing pages, blog content, schema markup, and ongoing technical optimization at scale.</div></div>
+      <div class="issue-item"><div class="issue-icon error">!</div><div><strong>Duplicate title tags (2 pages)</strong> &mdash; homepage title reused on blog and services pages, sending mixed signals to Googlebot on keyword targeting</div></div>
+      <div class="issue-item"><div class="issue-icon error">!</div><div><strong>Duplicate meta descriptions (2 pages)</strong> &mdash; same as above; reduces click-through potential in search results</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>Low text-to-HTML ratio on all 18 content pages</strong> &mdash; thin content signal site-wide; no page has sufficient text density to rank competitively for commercial terms</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>Missing H1 on 3 pages</strong> &mdash; includes the IoT consumer electronics engineering page (ILR score 10 &mdash; lowest on site, only 1 internal link pointing to it)</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>Unminified JS/CSS files (30 of 81)</strong> &mdash; minor load overhead; GTmetrix still grades A but worth addressing in the WordPress rebuild</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>7 orphaned sitemap pages</strong> &mdash; URLs in sitemap.xml with no internal links pointing to them; wasting crawl budget</div></div>
+      
+    </div>
+    <div class="card">
+      
+      <p style="font-size:0.85rem;color:var(--text);line-height:1.65;margin-bottom:1rem">The good news: simpleinnovations.com is <strong>technically fast and clean</strong> &mdash; GTmetrix Grade A, 93% performance, 644ms LCP. This is not a broken site. It&rsquo;s a well-built site on the wrong platform for growth. Duda prevents the keyword-targeted content, flexible templating, and optimization depth an SEO program requires. The WordPress rebuild moves Simple Innovations onto a platform where every content investment can compound.</p>
+      <div class="audit-grid">
+        <div class="ag-label">Site Health</div><div class="ag-value" style="color:var(--green)">89%</div>
+        <div class="ag-label">GTmetrix Performance</div><div class="ag-value" style="color:var(--green)">93%</div>
+        <div class="ag-label">LCP (Largest Contentful Paint)</div><div class="ag-value" style="color:var(--green)">644ms</div>
+        <div class="ag-label">Total Blocking Time</div><div class="ag-value" style="color:var(--green)">187ms</div>
+        <div class="ag-label">AI Search Health</div><div class="ag-value" style="color:var(--green)">99%</div>
+        <div class="ag-label">HTTPS / Canonicalization</div><div class="ag-value" style="color:var(--green)">Active</div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">02</div>
+    <h2 class="section-title">Keywords &amp; Traffic</h2>
+  </div>
+
+  <div class="card-grid cols-3" style="margin-bottom:1rem">
+    <div class="card">
+      <div class="card-label"><span class="dot red"></span> Total Organic Keywords</div>
+      <div class="big-stat danger">11</div>
+      <div class="stat-sub">All branded or near-branded &mdash; zero commercial or transactional intent terms ranking</div>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot red"></span> Organic Traffic</div>
+      <div class="big-stat danger">67<span style="font-size:1.2rem">/mo</span></div>
+      <div class="stat-sub">56 visits from &ldquo;simple innovations&rdquo; &mdash; people who already know the brand</div>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot red"></span> Authority Score</div>
+      <div class="big-stat danger">8</div>
+      <div class="stat-sub">256 backlinks &middot; 120 referring domains &middot; peers at AS 22&ndash;31</div>
+    </div>
+  </div>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot red"></span> Top Organic Keywords</div>
+      <table>
+        <thead><tr><th>Keyword</th><th>Volume</th><th>Position</th><th>Intent</th><th>Traffic</th></tr></thead>
+        <tbody>
+          <tr><td>simple innovations</td><td>70</td><td style="color:var(--green);font-weight:700">#1</td><td>Navigational</td><td>56 visits</td></tr>
+          <tr><td>simplified innovations</td><td>50</td><td style="color:var(--green);font-weight:700">#1</td><td>Informational</td><td>6 visits</td></tr>
+          <tr><td>sime innovation</td><td>90</td><td style="color:var(--green);font-weight:700">#3</td><td>Informational</td><td>5 visits</td></tr>
+          <tr><td>simple tech innovations</td><td>70</td><td style="color:var(--amber);font-weight:700">#14</td><td>Navigational</td><td>0 visits</td></tr>
+          <tr><td>sim innovations</td><td>110</td><td style="color:var(--amber);font-weight:700">#33</td><td>Navigational</td><td>0 visits</td></tr>
+          <tr><td>iot firmware development</td><td>320</td><td style="color:var(--red);font-weight:700">#39</td><td>Informational</td><td>0 visits</td></tr>
+          <tr><td>innovations incorporated</td><td>480</td><td style="color:var(--red);font-weight:700">#30</td><td>Informational</td><td>0 visits</td></tr>
+          <tr><td>simple solutions inc</td><td>110</td><td style="color:var(--red);font-weight:700">#57</td><td>Navigational</td><td>0 visits</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot red"></span> Branded vs. Non-Branded</div>
+      <div style="display:flex;gap:2rem;margin-bottom:1rem">
+        <div>
+          <div class="big-stat sm warning">84%</div>
+          <div class="stat-sub">Branded &mdash; 56 visits</div>
+        </div>
+        <div>
+          <div class="big-stat sm danger">16%</div>
+          <div class="stat-sub">Non-branded &mdash; 11 visits</div>
+        </div>
+      </div>
+      <div class="share-bar">
+        <div style="width:84%;background:var(--navy)">Branded 84%</div>
+        <div style="width:16%;background:var(--red)">16%</div>
+      </div>
+      <div style="margin-top:1rem">
+        <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Keywords by Intent</div>
+        <table>
+          <thead><tr><th>Intent</th><th>Keywords</th><th>Share</th><th>Traffic</th></tr></thead>
+          <tbody>
+            <tr><td>Informational</td><td>6</td><td>54.5%</td><td>11</td></tr>
+            <tr><td>Navigational</td><td>5</td><td>45.5%</td><td>56</td></tr>
+            <tr style="background:var(--red-light)"><td style="color:var(--red);font-weight:600">Commercial</td><td>0</td><td>0%</td><td>0</td></tr>
+            <tr style="background:var(--red-light)"><td style="color:var(--red);font-weight:600">Transactional</td><td>0</td><td>0%</td><td>0</td></tr>
+          </tbody>
+        </table>
+        <div style="background:var(--red-light);border-left:3px solid var(--red);border-radius:0 6px 6px 0;padding:0.55rem 0.75rem;margin-top:0.75rem;font-size:0.8rem;color:var(--text)">
+          <strong style="color:var(--red)">Zero commercial or transactional intent keywords.</strong> Every visit comes from someone already looking for &ldquo;simple innovations&rdquo; by name. Buyers with budget &mdash; searching for embedded engineering services, firmware development, or IoT design &mdash; are invisible to this site.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">03</div>
+    <h2 class="section-title">Competitor Keyword Gap</h2>
+  </div>
+
+  
+  <div class="gap-hero">
+    <div class="gap-hero-card">
+      <div class="number" style="color:var(--red)">30+</div>
+      <div class="label">Documented Gap Keywords<br>Competitors Rank &mdash; SI Doesn&#39;t</div>
+    </div>
+    <div class="gap-hero-card">
+      <div class="number" style="color:var(--amber)">5,000+</div>
+      <div class="label">Monthly Searches Simple<br>Innovations Isn&#39;t Capturing</div>
+    </div>
+    <div class="gap-hero-card">
+      <div class="number" style="color:var(--red)">1.0%</div>
+      <div class="label">SI&#39;s Share of Peer<br>Keyword Cluster (ByteSnap: 66.5%)</div>
+    </div>
+  </div>
+  
+
+  <p style="font-size:0.88rem;color:var(--text);line-height:1.65;max-width:780px;margin-bottom:1.25rem">The numbers first: how Simple Innovations&rsquo; organic footprint stacks up against the US embedded engineering firms capturing its market&rsquo;s search demand.</p>
+
+  <div class="card span-4">
+    <table>
+      <thead><tr><th>Domain</th><th>Auth. Score</th><th>Keywords</th><th>Traffic/mo</th><th>Ref. Domains</th><th>Cluster Share</th></tr></thead>
+      <tbody>
+        <tr class="highlight">
+          <td><strong>Simple Innovations (simpleinnovations.com)</strong></td><td style="color:var(--red)">8</td><td>11</td><td>67</td><td>120</td><td style="color:var(--red);font-weight:700">1.0%</td>
+        </tr>
+        <tr><td>ByteSnap Design</td><td>27</td><td>732</td><td>439</td><td>877</td><td>66.5%</td></tr>
+        <tr><td>DojoFive</td><td>22</td><td>358</td><td>224</td><td>374</td><td>32.5%</td></tr>
+        <tr style="font-style:italic;color:var(--muted)"><td>Arshon (global publisher, excl. from cluster)</td><td>31</td><td>4,730</td><td>33,473</td><td>1,495</td><td>&mdash;</td></tr>
+      </tbody>
+    </table>
+    <div class="share-bar" style="margin-top:1rem">
+      <div style="width:66.5%;background:var(--charcoal);display:flex;align-items:center;justify-content:center"><span style="font-size:0.65rem;font-weight:700;color:#fff">ByteSnap 66.5%</span></div>
+      <div style="width:32.5%;background:var(--navy);display:flex;align-items:center;justify-content:center"><span style="font-size:0.65rem;font-weight:700;color:#fff">DojoFive 32.5%</span></div>
+      <div style="width:1%;background:var(--red);display:flex;align-items:center;justify-content:center"><span style="font-size:0.55rem;font-weight:700;color:#fff"></span></div>
+    </div>
+    <div style="font-size:0.72rem;color:var(--muted);margin-top:0.5rem;font-style:italic">Cluster = US-based embedded engineering peer firms (ByteSnap + DojoFive + SI). SI share: 1.0%.</div>
+  </div>
+
+  <!-- Page 2 of section: comparative analysis + write-up -->
+  <div style="break-before:page;page-break-before:always;padding-top:1.5rem">
+  <div class="card-grid cols-2" style="margin-bottom:1rem">
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot red"></span> What This Means for Simple Innovations</div>
+      <p style="font-size:0.85rem;color:var(--text);line-height:1.65;margin-bottom:0.85rem">ByteSnap and DojoFive are capturing the exact searches Simple Innovations&rsquo; buyers make &mdash; &ldquo;embedded firmware development,&rdquo; &ldquo;custom firmware development,&rdquo; &ldquo;firmware development for embedded systems&rdquo; &mdash; while simpleinnovations.com doesn&rsquo;t appear anywhere in those results. These aren&rsquo;t better engineering firms; Simple Innovations counts Sub-Zero, Chamberlain, and Burris Optics among its clients. But they have keyword footprints 33x and 66x larger. Every month Simple Innovations stays off those 30+ documented gap keywords, prospects build shortlists without them.</p>
+      <div style="background:var(--navy);border-radius:8px;padding:1rem 1.25rem">
+        <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:0.5rem">Pipeline Impact &mdash; The Opportunity Math</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.85);line-height:1.65">The 5,000+ monthly searches Simple Innovations doesn&rsquo;t appear in represent a concrete pipeline gap. Capturing even <strong style="color:rgba(255,200,100,1)">2% of uncaptured search traffic</strong> as site visits (~100/mo) and converting at 5% to a qualified conversation produces <strong style="color:rgba(255,200,100,1)">5 new conversations per month</strong> from a channel generating near-zero inbound today. At Simple Innovations&rsquo; ~$30K average PO and a 2&ndash;3 month sales cycle, that&rsquo;s <strong style="color:rgba(255,200,100,1)">meaningful new pipeline growth</strong> from buyers who are actively searching right now &mdash; and finding competitors instead.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot amber"></span> Organic Keywords by Competitor</div>
+      <div class="rank-bar winner"><span class="name"><strong>ByteSnap</strong></span><span class="score" style="color:var(--green)">439/mo &middot; 732 keywords &middot; AS 27</span></div>
+      <div class="rank-bar winner"><span class="name">DojoFive</span><span class="score" style="color:var(--green)">224/mo &middot; 358 keywords &middot; AS 22</span></div>
+      <div class="rank-bar loser"><span class="name"><strong>Simple Innovations</strong></span><span class="score" style="color:var(--red)">67/mo &middot; 11 keywords &middot; AS 8</span></div>
+      <div style="background:var(--red-light);border-left:3px solid var(--red);border-radius:0 6px 6px 0;padding:0.6rem 0.85rem;margin-top:1rem;font-size:0.8rem;color:var(--text)">
+        <strong style="color:var(--red)">Key gap:</strong> ByteSnap ranks for 732 keywords Simple Innovations doesn&rsquo;t &mdash; including &ldquo;firmware development&rdquo; (880/mo), &ldquo;embedded firmware development&rdquo; (480/mo), and &ldquo;firmware design&rdquo; (210/mo). These are the exact services Simple Innovations delivers.
+      </div>
+      
+    </div>
+  </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">04</div>
+    <h2 class="section-title">Top Keyword Opportunities</h2>
+  </div>
+
+  
+  <p style="font-size:0.88rem;color:var(--text);line-height:1.65;max-width:780px">These are the highest-value gaps between Simple Innovations and its embedded engineering competitors &mdash; buyers actively researching firmware development, IoT design, and embedded systems engineering. All are addressable with targeted content pages on the new WordPress site.</p>
+      
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <table>
+        <thead><tr><th>Keyword</th><th>Volume</th><th>CPC</th><th>KD</th><th>SI Position</th><th>Priority</th></tr></thead>
+        <tbody>
+          <tr><td>firmware development</td><td>880</td><td>$10.64</td><td>29</td><td>Not Ranking</td><td><span class="badge red">Critical</span></td></tr>
+          <tr><td>embedded firmware development</td><td>480</td><td>$32.67</td><td>3</td><td>Not Ranking</td><td><span class="badge red">Critical</span></td></tr>
+          <tr><td>iot firmware development</td><td>320</td><td>&mdash;</td><td>14</td><td>#39</td><td><span class="badge red">Critical</span></td></tr>
+          <tr><td>firmware design</td><td>210</td><td>&mdash;</td><td>19</td><td>Not Ranking</td><td><span class="badge amber">High</span></td></tr>
+          <tr><td>custom firmware development</td><td>140</td><td>$15.09</td><td>4</td><td>Not Ranking</td><td><span class="badge amber">High</span></td></tr>
+          <tr><td>firmware development for embedded systems</td><td>140</td><td>&mdash;</td><td>21</td><td>Not Ranking</td><td><span class="badge amber">High</span></td></tr>
+          <tr><td>firmware architecture</td><td>110</td><td>&mdash;</td><td>3</td><td>Not Ranking</td><td><span class="badge amber">High</span></td></tr>
+          <tr><td>firmware programming</td><td>90</td><td>$7.08</td><td>15</td><td>Not Ranking</td><td><span class="badge green">Medium</span></td></tr>
+          <tr><td>embedded firmware development solutions</td><td>90</td><td>&mdash;</td><td>0</td><td>Not Ranking</td><td><span class="badge green">Medium</span></td></tr>
+          <tr><td>software vs firmware</td><td>590</td><td>&mdash;</td><td>35</td><td>Not Ranking</td><td><span class="badge amber">High</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot amber"></span> Page-to-Keyword Map &mdash; Recommended New Pages</div>
+      <table>
+        <thead><tr><th>Page</th><th>Target Keywords</th><th>Search Volume</th></tr></thead>
+        <tbody>
+          <tr><td>Embedded Firmware Development (rebuild)</td><td>firmware development, embedded firmware development</td><td>1,360/mo</td></tr>
+          <tr><td>Custom Firmware Development Page</td><td>custom firmware development, firmware design, firmware architecture</td><td>460/mo</td></tr>
+          <tr><td>IoT Product Development Page</td><td>iot firmware development, iot product development</td><td>320+/mo</td></tr>
+          <tr><td>Firmware Comparison Blog Content</td><td>software vs firmware, firmware vs embedded software</td><td>760/mo</td></tr>
+          <tr><td>Automotive Electronics Page</td><td>automotive electronics engineering, embedded automotive</td><td>Est. 200/mo</td></tr>
+          <tr><td>Wisconsin Embedded Engineering (rebuild)</td><td>embedded engineering Wisconsin, firmware development Wisconsin</td><td>Est. 150/mo</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">05</div>
+    <h2 class="section-title">SEO Content</h2>
+  </div>
+
+  <div class="card-grid cols-2" style="margin-bottom:1rem">
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot amber"></span> Page Structure &amp; Header Audit</div>
+      <div class="header-tree">
+        <span class="page-label">/ (Homepage)</span>
+        <div><span class="tag">&lt;H1&gt;</span> <span class="h1">Real Projects. Proven Results.</span></div>
+        <div class="indent miss">&#9888; No commercial keyword in H1 &mdash; misses &ldquo;embedded engineering services,&rdquo; &ldquo;embedded systems consulting,&rdquo; or any buyer-intent phrase</div>
+        <div class="indent miss">&#9888; Low text-to-HTML ratio flagged &mdash; homepage has insufficient content density to rank for target terms</div>
+
+        <span class="page-label">/embedded-firmware-development</span>
+        <div><span class="tag">&lt;H1&gt;</span> <span class="h1">Embedded Firmware Development | Reliable Systems</span></div>
+        <div class="indent miss">&#9888; Keyword present but thin content &mdash; page flagged for low text-to-HTML ratio; not competitive against ByteSnap&rsquo;s 2,000+ word firmware guides</div>
+        <div class="indent miss">&#9888; No FAQ schema or structured content for AI Overview capture</div>
+
+        <span class="page-label">/iot-consumer-electronics-engineering</span>
+        <div class="indent miss"><strong>&#9888; Missing H1</strong> &mdash; this page has the lowest internal link score (ILR 10) on the site, only 1 internal link pointing to it, and a load time 10x slower than other pages (0.37s vs 0.01s avg)</div>
+
+        <span class="page-label">/services (Overview)</span>
+        <div><span class="tag">&lt;H1&gt;</span> <span class="h1">Engineering Services | Firmware + Hardware + PCB Layout</span></div>
+        <div class="indent miss">&#9888; No transactional modifiers &mdash; &ldquo;embedded engineering services Wisconsin&rdquo; and &ldquo;firmware development company&rdquo; unaddressed</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot amber"></span> Service Page Inventory</div>
+      <table>
+        <thead><tr><th>Page</th><th>Status</th><th>Issue</th></tr></thead>
+        <tbody>
+          <tr><td>/embedded-firmware-development</td><td><span class="badge amber">Thin</span></td><td>Low text-to-HTML ratio; no FAQ schema</td></tr>
+          <tr><td>/firmware-and-hardware-integration</td><td><span class="badge amber">Thin</span></td><td>Canonical points to duplicate URL; thin content</td></tr>
+          <tr><td>/electronics-design-services</td><td><span class="badge amber">Thin</span></td><td>Low text-to-HTML; no PCB commercial keywords</td></tr>
+          <tr><td>/iot-consumer-electronics-engineering</td><td><span class="badge red">Issues</span></td><td>Missing H1 &middot; 1 internal link &middot; slow load (0.37s)</td></tr>
+          <tr><td>/embedded-ethernet-development-services</td><td><span class="badge amber">Thin</span></td><td>No external link-worthy depth</td></tr>
+          <tr><td>/pcb-design-milwaukee</td><td><span class="badge green">Present</span></td><td>Location page &mdash; good intent signal</td></tr>
+          <tr><td>/embedded-engineering-wisconsin</td><td><span class="badge green">Present</span></td><td>Good geo-targeting; thin content</td></tr>
+          <tr><td>Custom Firmware Dev Page</td><td><span class="badge red">Missing</span></td><td>&ldquo;custom firmware development&rdquo; = 140/mo; not ranking</td></tr>
+          <tr><td>Automotive Electronics Page</td><td><span class="badge red">Missing</span></td><td>Target industry per SI strategy; no page</td></tr>
+          <tr><td>Defense/DoD Subcontracting Page</td><td><span class="badge red">Missing</span></td><td>Target industry per SI strategy; no page</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <div class="card-label"><span class="dot red"></span> Blog &amp; Content Publishing</div>
+      <div class="big-stat sm danger" style="margin:0.5rem 0 0.25rem">Minimal</div>
+      <div class="stat-sub" style="margin-bottom:1rem">2 blog posts found &mdash; new site recently launched; content program has not begun</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;font-size:0.8rem;margin-bottom:0.85rem">
+        <div style="background:var(--light-gray);border-radius:6px;padding:0.5rem 0.65rem">
+          <div style="font-weight:700;color:var(--charcoal)">2</div>
+          <div style="color:var(--muted);font-size:0.72rem">Blog posts on site</div>
+        </div>
+        <div style="background:var(--light-gray);border-radius:6px;padding:0.5rem 0.65rem">
+          <div style="font-weight:700;color:var(--red)">0</div>
+          <div style="color:var(--muted);font-size:0.72rem">Posts targeting commercial firmware/IoT terms</div>
+        </div>
+      </div>
+      <div style="background:var(--red-light);border-left:3px solid var(--red);border-radius:0 6px 6px 0;padding:0.65rem 0.85rem;font-size:0.8rem;color:var(--text)">
+        <strong style="color:var(--red)">Critical gap:</strong> ByteSnap publishes firmware explainer guides and technical deep-dives that rank for every term Simple Innovations targets. DojoFive has a full blog with firmware security, tools, and comparison posts. Simple Innovations has 2 posts and zero commercial keyword rankings. A structured content program &mdash; 2 targeted pieces per month minimum &mdash; is the fastest path to closing the 5,000-search gap.
+      </div>
+      
+    </div>
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot red"></span> Missing Content Opportunities</div>
+      <ul style="padding-left:1.1rem;display:flex;flex-direction:column;gap:0.4rem">
+          <li><strong>firmware development</strong> &mdash; 880/mo &mdash; not ranking (ByteSnap #18)</li>
+          <li><strong>embedded firmware development</strong> &mdash; 480/mo &mdash; not ranking (DojoFive #6)</li>
+          <li><strong>software vs firmware</strong> &mdash; 590/mo &mdash; not ranking (DojoFive #19)</li>
+          <li><strong>firmware design</strong> &mdash; 210/mo &mdash; not ranking (ByteSnap #2)</li>
+          <li><strong>custom firmware development</strong> &mdash; 140/mo &mdash; not ranking (DojoFive #16)</li>
+          <li><strong>firmware architecture</strong> &mdash; 110/mo &mdash; not ranking (ByteSnap #46)</li>
+          <li><strong>embedded firmware development companies</strong> &mdash; 50/mo &mdash; not ranking (ByteSnap #7)</li>
+          <li><strong>IoT product development services</strong> &mdash; target for /iot-consumer-electronics-engineering rebuild</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">06</div>
+    <h2 class="section-title">Local SEO &amp; Online Presence</h2>
+  </div>
+
+  <div class="card-grid cols-4" style="margin-bottom:1rem">
+    <div class="card">
+      
+      <div class="card-label"><span class="dot amber"></span> NAP Audit</div>
+      <div style="font-size:0.82rem;line-height:1.8">
+        <div><strong>Name:</strong> Simple Innovations, Inc.</div>
+        <div><strong>Address:</strong> N63W23583 Main St F</div>
+        <div><strong>City:</strong> Sussex, WI 53089</div>
+        <div><strong>Phone:</strong> (262) 246-9655</div>
+        <div><strong>URL:</strong> simpleinnovations.com</div>
+      </div>
+      
+      <div style="background:var(--amber-light);border:1px solid var(--amber);border-radius:6px;padding:0.75rem 1rem;margin-top:0.75rem">
+        <div style="font-size:0.75rem;font-weight:700;color:var(--amber);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.3rem">&#9888; Address Conflict Detected</div>
+        <div style="font-size:0.8rem;color:var(--text)">HotFrog, ShowMeLocal, and Opendi all show the <strong>old address: N80 W24774 Plainview Road</strong> &mdash; Simple Innovations has since moved to Main St F. Buyers who find these listings get sent to the wrong location. GoLocal247 also shows a wrong phone number (262-372-4937).</div>
+      </div>
+      
+    </div>
+    <div class="card">
+      
+      <div class="big-stat warning" style="font-size:1.6rem">5.0 &#9733;</div>
+      <div class="stat-sub">2 Google reviews &mdash; perfect rating, near-zero visibility. Buyers evaluating engineering partners need to see review volume, not just a score from two entries.</div>
+      
+    </div>
+    <div class="card">
+      
+      <div class="big-stat sm danger">POOR</div>
+      <div class="stat-sub">5 directories connected &middot; 3 with wrong address &middot; majority of key directories not present</div>
+      
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot red"></span> Key Listing Status</div>
+      <div style="font-size:0.82rem;line-height:2;margin-top:0.75rem">
+        <div style="display:flex;justify-content:space-between;align-items:center"><span>Google Business Profile</span><span class="badge green">Verified</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center"><span>Bing Places</span><span class="badge red">Not Present</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center"><span>MapQuest</span><span class="badge red">Not Present</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center"><span>YellowPages Directory</span><span class="badge red">Not Present</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center"><span>HotFrog / ShowMeLocal</span><span class="badge amber">Wrong Address</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center"><span>GoLocal247</span><span class="badge amber">Wrong Phone</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card span-4" style="background:var(--navy);border-radius:10px;padding:2rem;border:none">
+    <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:0.75rem">The Local SEO Problem, in One Paragraph</div>
+    <p style="font-size:1rem;color:var(--white);line-height:1.7">Simple Innovations has a verified GBP showing a perfect 5.0 &#9733; rating &mdash; a strong foundation. But two reviews won&rsquo;t carry buyer trust when engineering procurement teams are evaluating a new partner for a $30K+ project. Three directories actively point to the old Plainview Road address, sending anyone who finds those listings to the wrong location. GoLocal247 shows a different phone number entirely. And Simple Innovations is absent from Bing, MapQuest, and YellowPages &mdash; leaving the discovery footprint nearly entirely dependent on the GBP alone. As the company pursues a $25M growth target, a consistent, accurate citation presence across high-traffic directories is foundational infrastructure &mdash; not optional cleanup.</p>
+      
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">07</div>
+    <h2 class="section-title">How Abstrakt Closes the Gap</h2>
+  </div>
+
+  
+  <p style="font-size:0.88rem;color:var(--text);line-height:1.65;max-width:780px">Simple Innovations has the engineering talent and the client wins &mdash; Sub-Zero, Chamberlain, Burris Optics &mdash; to compete with any embedded engineering firm in the US. What&rsquo;s missing is the digital infrastructure that puts those wins in front of buyers when they search. Abstrakt closes that gap with a WordPress rebuild, targeted content, and systematic citation cleanup that turns a technically excellent website into a commercial search presence.</p>
+      
+
+  <div class="plan-grid">
+
+    <div class="plan-card">
+      <div class="plan-card-header">
+        <div style="width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:900;color:white;flex-shrink:0">1</div>
+        <span class="step-title">Website Rebuild</span>
+      </div>
+      <div class="plan-card-body">
+        
+        <p style="font-size:0.8rem;color:var(--muted);margin-bottom:0.75rem">simpleinnovations.com is fast and clean &mdash; but Duda prevents the content depth, flexible templating, and optimization control an SEO program requires. The WordPress rebuild is the unlock. Every content investment made after launch compounds on a platform built for SEO.</p>
+        <h4>What we build</h4>
+        <ul>
+          <li>30-page WordPress site &mdash; live in 90 days on a conversion-focused framework</li>
+          <li>15,000 words of keyword-targeted website copy covering firmware, IoT, hardware, and geo pages</li>
+          <li>Schema markup (LocalBusiness, Service, FAQ) built in from day one</li>
+          <li>llms.txt and AI-search-ready structured content throughout</li>
+          <li>Fix duplicate title tags, missing H1s, and canonical issue on the IoT page</li>
+          <li>WordPress hosting with 24/7 uptime monitoring included</li>
+        </ul>
+        <div class="callout">Duda is the ceiling. WordPress is the runway.</div>
+      
+      </div>
+    </div>
+
+    <div class="plan-card">
+      <div class="plan-card-header">
+        <div style="width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:900;color:white;flex-shrink:0">2</div>
+        <span class="step-title">Content &amp; SEO</span>
+      </div>
+      <div class="plan-card-body">
+        
+        <p style="font-size:0.8rem;color:var(--muted);margin-bottom:0.75rem">Simple Innovations ranks for 11 US keywords &mdash; none commercial buyer terms. 30+ documented gap keywords represent 5,000+ monthly searches that competitors capture and Simple Innovations doesn&rsquo;t. Content is the unlock.</p>
+        <h4>What we build</h4>
+        <ul>
+          <li>3,000+ words/month post-launch targeting &ldquo;firmware development,&rdquo; &ldquo;embedded firmware development,&rdquo; &ldquo;IoT product development&rdquo;</li>
+          <li>New service pages: Custom Firmware Development, Automotive Electronics, Defense Subcontracting</li>
+          <li>Monthly on-page optimization &mdash; meta tags, H-tags, internal linking, FAQ schema</li>
+          <li>GBP management: review generation program (2 &rarr; 20+ reviews in 12 months)</li>
+          <li>Citation cleanup: correct 3 wrong-address listings + GoLocal247 phone + 10+ missing directory submissions (Bing, MapQuest, YellowPages)</li>
+          <li>AI Overview optimization on all firmware and IoT service pages</li>
+        </ul>
+        <div class="callout">Abstrakt clients average 3.55&times; ROI. Organic SEO builds compounding value every month it runs.</div>
+      
+      </div>
+    </div>
+
+    <div class="plan-card">
+      <div class="plan-card-header">
+        <div style="width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:900;color:white;flex-shrink:0">3</div>
+        <span class="step-title">Paid Search</span>
+      </div>
+      <div class="plan-card-body">
+        <p style="font-size:0.8rem;color:var(--muted);margin-bottom:0.75rem">Organic builds long-term. Paid captures the demand that already exists today &mdash; buyers searching right now for &ldquo;embedded firmware development company&rdquo; or &ldquo;IoT product development services.&rdquo; Our primary metric is <strong>Cost Per Sales Qualified Lead (CPSQL)</strong>, not clicks or impressions.</p>
+        <h4>The Technology Stack</h4>
+        <ul>
+          <li><strong>WhatConverts</strong> &mdash; full attribution reporting; every call and form tied to the keyword and campaign that generated it</li>
+          <li><strong>ClickCease</strong> &mdash; ad fraud + competitor click waste protection; SI&rsquo;s budget goes only to real buyers</li>
+          <li><strong>Conversion Training / Max ROAS</strong> &mdash; closed deals fed back into Google so the AI optimizes for SQLs, not just leads</li>
+          <li>Target keywords: firmware development, embedded engineering services, IoT product development</li>
+          <li>Target sectors: manufacturing, consumer electronics, defense, industrial IoT, Midwest OEMs</li>
+        </ul>
+        <div class="callout">At a $30K average PO, even 2 additional SQLs/month from paid search justifies the program.</div>
+      
+      </div>
+    </div>
+
+  </div>
+
+  <div class="card-grid cols-2" style="margin-bottom:1rem">
+
+    <div class="card">
+      <div style="font-size:1rem;font-weight:800;color:var(--charcoal);margin-bottom:1.25rem">Why This Fits Simple Innovations</div>
+
+      <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:1.25rem">
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--navy)">1. The $25M goal requires buyers who don&rsquo;t know SI yet</div>
+          <div style="font-size:0.82rem;color:var(--text)">Simple Innovations wants to grow from $3M to $25M. That $22M doesn&rsquo;t come from people searching &ldquo;simple innovations&rdquo; &mdash; it comes from buyers who don&rsquo;t know SI exists yet. They&rsquo;re searching Google for what SI does right now and finding competitors instead.</div>
+        </div>
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--navy)">2. WordPress unlocks the SEO program Duda prevents</div>
+          <div style="font-size:0.82rem;color:var(--text)">The current site is fast and well-designed. But Duda limits content depth, CMS-level optimization, and schema control. A WordPress rebuild by Abstrakt comes SEO-native &mdash; properly templated, schema-enabled, and ready for the content program on day one.</div>
+        </div>
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--navy)">3. The content targets the exact pain points SI&rsquo;s buyers describe</div>
+          <div style="font-size:0.82rem;color:var(--text)">&ldquo;Our engineering team is overloaded.&rdquo; &ldquo;This project is too important to get wrong.&rdquo; These translate directly to search terms &mdash; &ldquo;embedded firmware development services,&rdquo; &ldquo;IoT product development company.&rdquo; That&rsquo;s where the content goes.</div>
+        </div>
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--navy)">4. One partner covers rebuild + content + local + paid</div>
+          <div style="font-size:0.82rem;color:var(--text)">Site rebuild, SEO content, citation cleanup, GBP management, and optional paid media &mdash; all from one team with embedded systems industry context. No fragmented agencies, no handoff gaps.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div style="font-size:1rem;font-weight:800;color:var(--charcoal);margin-bottom:1rem">90-Day Launch Plan</div>
+
+      <div style="display:flex;flex-direction:column;gap:0.6rem;margin-bottom:1rem">
+
+        <div style="border-left:3px solid var(--navy);padding:0.75rem 1rem;background:var(--light-gray);border-radius:0 8px 8px 0">
+          <div style="font-size:0.7rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--navy);margin-bottom:0.35rem">Days 1&ndash;30 &mdash; Kickoff &amp; Foundation</div>
+          <div style="font-size:0.79rem;color:var(--text);line-height:1.6">WordPress site architecture + sitemap approved &middot; Keyword research finalized for all 30 target pages &middot; GBP optimization + review request process initiated &middot; Citation cleanup: correct 3 wrong-address listings + GoLocal247 phone + Bing Places submission</div>
+        </div>
+
+        <div style="border-left:3px solid var(--amber);padding:0.75rem 1rem;background:var(--amber-light);border-radius:0 8px 8px 0">
+          <div style="font-size:0.7rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber);margin-bottom:0.35rem">Days 31&ndash;60 &mdash; Build &amp; Content</div>
+          <div style="font-size:0.79rem;color:var(--text);line-height:1.6">WordPress site build in staging &middot; Core service pages drafted (Embedded Firmware, IoT, Custom Firmware, Hardware Integration) &middot; First blog content targeting &ldquo;firmware development&rdquo; cluster &middot; MapQuest + YellowPages + missing directory filings complete</div>
+        </div>
+
+        <div style="border-left:3px solid var(--green);padding:0.75rem 1rem;background:var(--green-light);border-radius:0 8px 8px 0">
+          <div style="font-size:0.7rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--green);margin-bottom:0.35rem">Days 61&ndash;90 &mdash; Launch &amp; Optimize</div>
+          <div style="font-size:0.79rem;color:var(--text);line-height:1.6">30-page WordPress site goes live &middot; Schema markup + llms.txt deployed &middot; Organic keyword baseline established for Month 4 tracking &middot; GBP review campaign active &middot; Month 3 performance report delivered</div>
+        </div>
+
+      </div>
+
+      <div style="background:var(--green-light);border-radius:8px;padding:0.85rem 1rem;border:1px solid var(--green)">
+        <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--green);margin-bottom:0.5rem">12-Month Targets</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.4rem;font-size:0.8rem">
+          <div><span style="color:var(--muted)">Organic Traffic:</span> <strong>67 &rarr; 400+/mo</strong></div>
+          <div><span style="color:var(--muted)">Keywords Ranking:</span> <strong>11 &rarr; 150+</strong></div>
+          <div><span style="color:var(--muted)">GBP Reviews:</span> <strong>2 &rarr; 20+</strong></div>
+          <div><span style="color:var(--muted)">New Pages Live:</span> <strong>0 &rarr; 30</strong></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  
+  <div style="background:var(--charcoal);border-radius:10px;padding:2rem;margin-top:1rem">
+    <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:start">
+      <div>
+        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:0.5rem">Why It Works &mdash; Conversion Training &amp; Maximum ROAS</div>
+        <div style="font-size:1.1rem;font-weight:800;color:var(--white);margin-bottom:0.75rem">The Power of Training Google on Sales Qualified Leads</div>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);line-height:1.6;margin-bottom:0.75rem">Reaching peak AI-driven paid performance requires <strong style="color:var(--white)">3&ndash;4 months of consistent, high-quality conversion data</strong> &mdash; specifically, proposal outcomes and closed deals tied to each lead &mdash; so Google&rsquo;s machine learning can identify the behavioral patterns of high-value embedded engineering prospects. WhatConverts captures the attribution; ClickCease protects the spend; and closed deals fed back into the system train the engine to optimize for SQL quality, not lead volume.</p>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);line-height:1.6">Abstrakt also offers outbound appointment setting &mdash; our teams engage, qualify, and book embedded engineering prospects directly to SI&rsquo;s sales calendar. Partners who combine inbound + paid + outbound average a <strong style="color:rgba(255,200,100,1)">2.1&times; increase in deal size</strong> and a <strong style="color:rgba(255,200,100,1)">3.55&times; average ROI</strong>.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:1rem;flex-shrink:0;min-width:150px">
+        <div style="text-align:center;background:rgba(255,255,255,0.06);border-radius:8px;padding:1rem">
+          <div style="font-size:2rem;font-weight:900;color:var(--white)">$30K</div>
+          <div style="font-size:0.6rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.08em">SI Avg. PO Size</div>
+        </div>
+        <div style="text-align:center;background:rgba(255,255,255,0.06);border-radius:8px;padding:1rem">
+          <div style="font-size:2rem;font-weight:900;color:var(--white)">3.55x</div>
+          <div style="font-size:0.6rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.08em">Avg. Client ROI</div>
+        </div>
+        <div style="text-align:center;background:rgba(255,255,255,0.06);border-radius:8px;padding:1rem">
+          <div style="font-size:2rem;font-weight:900;color:var(--white)">2.1x</div>
+          <div style="font-size:0.6rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.08em">Deal Size Increase</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">08</div>
+    <h2 class="section-title">Recommended Solution</h2>
+  </div>
+
+  <div style="margin-bottom:1.25rem">
+    <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.75rem">Proposed Programs</div>
+    <div class="card-grid cols-3">
+
+      <div class="card" style="border:2px solid var(--coral)">
+        <div style="position:absolute;top:0;right:1rem;background:var(--coral);color:var(--white);font-size:0.58rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:0.2rem 0.6rem;border-radius:0 0 4px 4px">Recommended</div>
+        <div style="font-size:1.1rem;font-weight:800;color:var(--charcoal);margin-bottom:0.25rem">Website + SEO Content Program</div>
+        <div style="font-size:1.8rem;font-weight:900;color:var(--navy);margin-bottom:0.25rem">$2,500<span style="font-size:0.9rem;font-weight:400;color:var(--muted)">/mo</span></div>
+        <div style="font-size:0.72rem;color:var(--muted);margin-bottom:1rem">New 30-page WordPress website + ongoing SEO growth program</div>
+        <div style="display:flex;flex-direction:column;gap:0.35rem">
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> 30-page conversion-focused WordPress site &mdash; live in 90 days</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> 15,000 words of keyword-targeted website copy</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> SEO + AI-search foundation built in from day one (schema, llms.txt)</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> 3,000+ words/month of SEO content post-launch</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Monthly local listing optimization + GBP management</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Website hosting, site health monitoring &amp; 24/7 support</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Dedicated account manager + monthly results reporting</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div style="font-size:1.1rem;font-weight:800;color:var(--charcoal);margin-bottom:0.25rem">SEO Content Program</div>
+        <div style="font-size:1.8rem;font-weight:900;color:var(--navy);margin-bottom:0.25rem">$2,250<span style="font-size:0.9rem;font-weight:400;color:var(--muted)">/mo</span></div>
+        <div style="font-size:0.72rem;color:var(--muted);margin-bottom:1rem">For an existing website that&rsquo;s ready to rank</div>
+        <div style="display:flex;flex-direction:column;gap:0.35rem">
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> 4,000+ words/month targeting the keyword gaps in this audit</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> On-page optimization &mdash; meta tags, H-tags, internal linking, schema</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Technical SEO: crawl error, broken link &amp; sitemap remediation</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> AI search optimization &mdash; built for Google + AI Overviews + LLMs</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Monthly local listing optimization + GBP management</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Hosting + monthly site health monitoring included</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Dedicated account manager + monthly results reporting</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div style="font-size:1.1rem;font-weight:800;color:var(--charcoal);margin-bottom:0.25rem">Program Add-Ons</div>
+        <div style="font-size:0.72rem;color:var(--muted);margin-bottom:1rem">Layer onto either program as the strategy scales</div>
+        <div style="display:flex;flex-direction:column;gap:0.6rem">
+        <div style="border:1px solid var(--border);border-radius:8px;padding:0.75rem 0.9rem;background:var(--off-white)">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:0.5rem">
+            <div style="font-size:0.88rem;font-weight:800;color:var(--charcoal)">Paid Media</div>
+            <div style="font-size:0.95rem;font-weight:900;color:var(--navy);white-space:nowrap">From $1,250/mo</div>
+          </div>
+          <div style="font-size:0.76rem;color:var(--text);line-height:1.5;margin-top:0.25rem">Google Ads managed to Cost Per SQL &mdash; WhatConverts attribution, ClickCease fraud protection, conversion training targeting firmware and embedded engineering buyer keywords.</div>
+        </div>
+        <div style="border:1px solid var(--border);border-radius:8px;padding:0.75rem 0.9rem;background:var(--off-white)">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:0.5rem">
+            <div style="font-size:0.88rem;font-weight:800;color:var(--charcoal)">Social Media Management</div>
+            <div style="font-size:0.95rem;font-weight:900;color:var(--navy);white-space:nowrap">$500/mo</div>
+          </div>
+          <div style="font-size:0.76rem;color:var(--text);line-height:1.5;margin-top:0.25rem">Consistent, on-brand posting across LinkedIn and core platforms &mdash; distributing SEO content and building SI&rsquo;s presence with engineering decision-makers.</div>
+        </div>
+        <div style="border:1px solid var(--border);border-radius:8px;padding:0.75rem 0.9rem;background:var(--off-white)">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:0.5rem">
+            <div style="font-size:0.88rem;font-weight:800;color:var(--charcoal)">Authority Building</div>
+            <div style="font-size:0.95rem;font-weight:900;color:var(--navy);white-space:nowrap">$500/mo</div>
+          </div>
+          <div style="font-size:0.76rem;color:var(--text);line-height:1.5;margin-top:0.25rem">Backlink program: DA-40+ guest post placements each month to grow referring domains and Authority Score from 8 toward the competitive range (22+).</div>
+        </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card-grid cols-2" style="margin-bottom:1rem">
+
+    <div class="card">
+      <div style="font-size:1rem;font-weight:800;color:var(--charcoal);margin-bottom:1.25rem">Why This Fits Simple Innovations</div>
+
+      <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:1.25rem">
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--navy)">1. The $25M goal requires buyers who don&rsquo;t know SI yet</div>
+          <div style="font-size:0.82rem;color:var(--text)">SI currently relies on cold email, trade shows, and referrals. Organic search is the only channel that compounds &mdash; every page built keeps generating leads while SI&rsquo;s engineering team focuses on delivery.</div>
+        </div>
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--navy)">2. The rebuild moves SI onto a platform where content investments compound</div>
+          <div style="font-size:0.82rem;color:var(--text)">Duda is fast and clean &mdash; but it won&rsquo;t support the SEO depth needed. WordPress puts SI on the same foundation as ByteSnap and DojoFive, where every content piece builds authority and rankings over time.</div>
+        </div>
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--navy)">3. SI&rsquo;s differentiators map directly to high-intent search terms</div>
+          <div style="font-size:0.82rem;color:var(--text)">&ldquo;Speed through structure.&rdquo; &ldquo;Solutions through partnership.&rdquo; These translate to searches buyers make: &ldquo;embedded firmware development company,&rdquo; &ldquo;IoT product development services Wisconsin.&rdquo; Content puts that story in front of the right buyers at the moment of need.</div>
+        </div>
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--navy)">4. One partner manages the full digital stack</div>
+          <div style="font-size:0.82rem;color:var(--text)">Rebuild, SEO content, citation cleanup, GBP management, and optional paid &mdash; all from one team with embedded systems industry context. No fragmented agencies, no coordination burden on SI&rsquo;s leadership.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div style="font-size:1rem;font-weight:800;color:var(--charcoal);margin-bottom:1rem">12-Month Growth Path</div>
+
+      <div style="display:flex;flex-direction:column;gap:0.6rem;margin-bottom:1rem">
+
+        <div style="border-left:3px solid var(--navy);padding:0.75rem 1rem;background:var(--light-gray);border-radius:0 8px 8px 0">
+          <div style="font-size:0.7rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--navy);margin-bottom:0.35rem">Months 1&ndash;3 &mdash; Build &amp; Launch</div>
+          <div style="font-size:0.79rem;color:var(--text);line-height:1.6">30-page WordPress site live &middot; Citation conflicts corrected &middot; Keyword baseline established &middot; First 3 firmware content pieces published &middot; Schema + llms.txt deployed</div>
+        </div>
+
+        <div style="border-left:3px solid var(--amber);padding:0.75rem 1rem;background:var(--amber-light);border-radius:0 8px 8px 0">
+          <div style="font-size:0.7rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber);margin-bottom:0.35rem">Months 4&ndash;6 &mdash; Traction</div>
+          <div style="font-size:0.79rem;color:var(--text);line-height:1.6">First commercial keyword rankings appearing &middot; GBP reviews growing &middot; Organic traffic trending up &middot; Authority Score beginning to climb with link program</div>
+        </div>
+
+        <div style="border-left:3px solid var(--green);padding:0.75rem 1rem;background:var(--green-light);border-radius:0 8px 8px 0">
+          <div style="font-size:0.7rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--green);margin-bottom:0.35rem">Months 7&ndash;12 &mdash; Compounding</div>
+          <div style="font-size:0.79rem;color:var(--text);line-height:1.6">150+ keywords ranking &middot; 400+ organic visits/month &middot; 20+ GBP reviews &middot; Inbound leads reaching SI&rsquo;s sales team without cold outreach</div>
+        </div>
+
+      </div>
+
+      <div style="background:var(--green-light);border-radius:8px;padding:0.85rem 1rem;border:1px solid var(--green)">
+        <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--green);margin-bottom:0.5rem">12-Month Targets</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.4rem;font-size:0.8rem">
+          <div><span style="color:var(--muted)">Organic Traffic:</span> <strong>67 &rarr; 400+/mo</strong></div>
+          <div><span style="color:var(--muted)">Keywords Ranking:</span> <strong>11 &rarr; 150+</strong></div>
+          <div><span style="color:var(--muted)">GBP Reviews:</span> <strong>2 &rarr; 20+</strong></div>
+          <div><span style="color:var(--muted)">Authority Score:</span> <strong>8 &rarr; 20+</strong></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  
+  <div style="background:var(--charcoal);border-radius:10px;padding:2rem;margin-top:1rem">
+    <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:start">
+      <div>
+        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:0.5rem">Why It Works &mdash; Conversion Training &amp; Maximum ROAS</div>
+        <div style="font-size:1.1rem;font-weight:800;color:var(--white);margin-bottom:0.75rem">The Power of Training Google on Sales Qualified Leads</div>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);line-height:1.6;margin-bottom:0.75rem">For the paid add-on, reaching peak AI-driven performance requires <strong style="color:var(--white)">3&ndash;4 months of consistent, high-quality conversion data</strong> &mdash; proposal outcomes and closed deals tied to each lead &mdash; so Google&rsquo;s machine learning can identify the behavioral patterns of high-value embedded engineering prospects. WhatConverts captures the attribution; ClickCease protects the spend; and deals fed back into the system train the engine to optimize for SQL quality, not lead volume.</p>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);line-height:1.6">Abstrakt also offers outbound appointment setting &mdash; our teams engage, qualify, and book embedded engineering prospects directly to SI&rsquo;s sales calendar. Partners who combine inbound + paid + outbound average a <strong style="color:rgba(255,200,100,1)">2.1&times; increase in deal size</strong> and a <strong style="color:rgba(255,200,100,1)">3.55&times; average ROI</strong>.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:1rem;flex-shrink:0;min-width:150px">
+        <div style="text-align:center;background:rgba(255,255,255,0.06);border-radius:8px;padding:1rem">
+          <div style="font-size:2rem;font-weight:900;color:var(--white)">$30K</div>
+          <div style="font-size:0.6rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.08em">SI Avg. PO Size</div>
+        </div>
+        <div style="text-align:center;background:rgba(255,255,255,0.06);border-radius:8px;padding:1rem">
+          <div style="font-size:2rem;font-weight:900;color:var(--white)">3.55x</div>
+          <div style="font-size:0.6rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.08em">Avg. Client ROI</div>
+        </div>
+        <div style="text-align:center;background:rgba(255,255,255,0.06);border-radius:8px;padding:1rem">
+          <div style="font-size:2rem;font-weight:900;color:var(--white)">2.1x</div>
+          <div style="font-size:0.6rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.08em">Deal Size Increase</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+<div class="full-divider"></div>
+
+<!-- ============================================================
+     OPTIONAL SECTIONS 09 & 10
+     Include ONLY when the recommended solution (Section 08)
+     includes a website build (Website + SEO Content Program).
+     Delete both sections for SEO Content Program-only deals.
+     ============================================================ -->
+
+<section>
+  <div class="section-header">
+    <div class="section-number">09</div>
+    <h2 class="section-title">Our Process</h2>
+  </div>
+  <p style="font-size:0.9rem;color:var(--text);max-width:780px;margin-bottom:2rem">Every Abstrakt engagement runs through four coordinated phases. Simple Innovations would enter at Research and move through all four &mdash; building a new WordPress site, ranking it for embedded engineering terms, and scaling the inbound leads it generates.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--border);border-radius:10px;overflow:hidden">
+
+    
+    <div style="padding:1.5rem;border-right:1px solid var(--border)">
+      <div style="font-size:1.1rem;font-weight:900;color:#D4920A;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1.25rem">Research</div>
+      <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Competitor Analysis</div>
+      <ul style="list-style:none;margin-bottom:1rem;display:flex;flex-direction:column;gap:0.35rem">
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Competitor 1</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Competitor 2</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Competitor 3</li>
+      </ul>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem;margin-bottom:0.5rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Keyword &amp; Opportunity Research</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Keyword Volume &amp; Difficulty</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Competitor Gaps</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>User Intent</li>
+        </ul>
+      </div>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Sitemap Creation</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Content Roadmap</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div style="padding:1.5rem;border-right:1px solid var(--border);background:var(--light-gray)">
+      <div style="font-size:1.1rem;font-weight:900;color:var(--red);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1.25rem">Build</div>
+      <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Website Build</div>
+      <ul style="list-style:none;margin-bottom:1rem;display:flex;flex-direction:column;gap:0.35rem">
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>90-Day Timeline</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>30 Pages</li>
+      </ul>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem;margin-bottom:1rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Website Copy &amp; Design</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>15,000 Words</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Conversion-Focused Design</li>
+        </ul>
+      </div>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem;margin-bottom:1rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Website Development</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>5 QA Checks</li>
+        </ul>
+      </div>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Sales Assets</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Optional Add-On</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div style="padding:1.5rem;border-right:1px solid var(--border)">
+      <div style="font-size:1.1rem;font-weight:900;color:var(--navy);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1.25rem">Optimize</div>
+      <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Keyword &amp; Opportunity Research</div>
+      <ul style="list-style:none;margin-bottom:1rem;display:flex;flex-direction:column;gap:0.35rem">
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Site Health</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Core Web Vitals</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Lead Deliverability</li>
+      </ul>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem;margin-bottom:1rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Technical SEO</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Internal Linking</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Crawlability</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Indexability</li>
+        </ul>
+      </div>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Website Hosting</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>99% Uptime &amp; 24/7 Support</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div style="padding:1.5rem;background:var(--light-gray)">
+      <div style="font-size:1.1rem;font-weight:900;color:var(--blue);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1.25rem">Grow</div>
+      <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Content &amp; Distribution</div>
+      <ul style="list-style:none;margin-bottom:1rem;display:flex;flex-direction:column;gap:0.35rem">
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>4,000+ Words Monthly</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Social Distribution</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Entity Focused Content Strategy</li>
+      </ul>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem;margin-bottom:1rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Monthly Local SEO Optimization</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Top 65+ Local Directories</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Name, Address, &amp; Phone Strategy</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Duplicate Listing Suppression</li>
+        </ul>
+      </div>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Monthly Results Reporting &amp; Consultation</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Partner Results Portal</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">10</div>
+    <h2 class="section-title">Website Build Timeline</h2>
+  </div>
+  <p style="font-size:0.9rem;color:var(--text);max-width:780px;margin-bottom:2.5rem">From kickoff to go-live in 90 days &mdash; and then straight into the SEO growth phase. Here&rsquo;s exactly what happens and when.</p>
+
+  
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);border-radius:10px 10px 0 0;overflow:hidden">
+    <div style="background:var(--navy);padding:1.25rem 1.5rem;position:relative">
+      <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:0.2rem">Month 1</div>
+      <div style="font-size:1.15rem;font-weight:900;color:var(--white);letter-spacing:0.02em;text-transform:uppercase">Creation</div>
+      <div style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);font-size:3rem;font-weight:900;color:rgba(255,255,255,0.08);line-height:1">01</div>
+    </div>
+    <div style="background:#1C3D6E;padding:1.25rem 1.5rem;position:relative">
+      <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:0.2rem">Month 2</div>
+      <div style="font-size:1.15rem;font-weight:900;color:var(--white);letter-spacing:0.02em;text-transform:uppercase">Development</div>
+      <div style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);font-size:3rem;font-weight:900;color:rgba(255,255,255,0.06);line-height:1">02</div>
+    </div>
+    <div style="background:var(--red);padding:1.25rem 1.5rem;position:relative">
+      <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:0.2rem">Month 3</div>
+      <div style="font-size:1.15rem;font-weight:900;color:var(--white);letter-spacing:0.02em;text-transform:uppercase">Launch &#10003;</div>
+      <div style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);font-size:3rem;font-weight:900;color:rgba(255,255,255,0.1);line-height:1">03</div>
+    </div>
+    <div style="background:var(--navy-dark);padding:1.25rem 1.5rem;position:relative">
+      <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:0.2rem">Month 4+</div>
+      <div style="font-size:1.15rem;font-weight:900;color:var(--white);letter-spacing:0.02em;text-transform:uppercase">Ongoing</div>
+      <div style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);font-size:3rem;font-weight:900;color:rgba(255,255,255,0.06);line-height:1">04</div>
+    </div>
+  </div>
+
+  
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);background:var(--white);border-left:1px solid var(--border);border-right:1px solid var(--border)">
+    <div style="padding:0.6rem 1.5rem;border-right:1px solid var(--border);display:flex;align-items:center;gap:0.5rem">
+      <div style="width:10px;height:10px;border-radius:50%;background:var(--navy);flex-shrink:0"></div>
+      <div style="flex:1;height:2px;background:var(--navy)"></div>
+    </div>
+    <div style="padding:0.6rem 1.5rem;border-right:1px solid var(--border);display:flex;align-items:center;gap:0.5rem">
+      <div style="flex:1;height:2px;background:#1C3D6E"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:#1C3D6E;flex-shrink:0"></div>
+      <div style="flex:1;height:2px;background:#1C3D6E"></div>
+    </div>
+    <div style="padding:0.6rem 1.5rem;border-right:1px solid var(--border);display:flex;align-items:center;gap:0.5rem">
+      <div style="flex:1;height:2px;background:var(--red)"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:var(--red);flex-shrink:0"></div>
+      <div style="flex:1;height:2px;background:var(--red)"></div>
+    </div>
+    <div style="padding:0.6rem 1.5rem;display:flex;align-items:center;gap:0.5rem">
+      <div style="flex:1;height:2px;background:var(--navy-dark)"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:var(--navy-dark);flex-shrink:0"></div>
+    </div>
+  </div>
+
+  
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border);border-top:none;border-radius:0 0 10px 10px;overflow:hidden;background:var(--white)">
+
+    
+    <div style="padding:1.5rem;border-right:1px solid var(--border)">
+      
+      <div style="margin-bottom:1.25rem">
+        <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--navy);flex-shrink:0"></div>
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--navy)">Kickoff Meeting</div>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.3rem;padding-left:1rem;border-left:2px solid var(--navy)">
+          <li style="font-size:0.78rem;color:var(--text)">Sitemap &amp; SEO keyword creation</li>
+          <li style="font-size:0.78rem;color:var(--text)">Website mockup</li>
+          <li style="font-size:0.78rem;color:var(--text)">Sitemap edits</li>
+        </ul>
+      </div>
+      
+      <div>
+        <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--muted);flex-shrink:0"></div>
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted)">Progress Meeting</div>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.3rem;padding-left:1rem;border-left:2px solid var(--border)">
+          <li style="font-size:0.78rem;color:var(--text)">Sitemap approval</li>
+          <li style="font-size:0.78rem;color:var(--text)">Website mockup edits</li>
+          <li style="font-size:0.78rem;color:var(--text)">Website &amp; domain access</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div style="padding:1.5rem;border-right:1px solid var(--border);background:var(--off-white)">
+      
+      <div style="margin-bottom:1.25rem">
+        <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--navy);flex-shrink:0"></div>
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--navy)">Content Meeting</div>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.3rem;padding-left:1rem;border-left:2px solid var(--navy)">
+          <li style="font-size:0.78rem;color:var(--text)">Website mockup approval</li>
+          <li style="font-size:0.78rem;color:var(--text)">Social media accesses</li>
+          <li style="font-size:0.78rem;color:var(--text)">Profile &amp; cover photos</li>
+        </ul>
+      </div>
+      
+      <div style="margin-bottom:1rem">
+        <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--charcoal);flex-shrink:0"></div>
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--charcoal)">AMG Executes</div>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.3rem;padding-left:1rem;border-left:2px solid var(--charcoal)">
+          <li style="font-size:0.78rem;color:var(--text)">Website content creation</li>
+          <li style="font-size:0.78rem;color:var(--text)">Website development</li>
+          <li style="font-size:0.78rem;color:var(--text)">Internal Q&amp;A review</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div style="padding:1.5rem;border-right:1px solid var(--border)">
+      
+      <div style="margin-bottom:1.25rem">
+        <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--navy);flex-shrink:0"></div>
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--navy)">Website Reveal</div>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.3rem;padding-left:1rem;border-left:2px solid var(--navy)">
+          <li style="font-size:0.78rem;color:var(--text)">Client reviews live site</li>
+          <li style="font-size:0.78rem;color:var(--text)">Edits provided by client</li>
+          <li style="font-size:0.78rem;color:var(--text)">AMG completes final edits</li>
+        </ul>
+      </div>
+      
+      <div style="background:var(--red);border-radius:8px;padding:0.85rem 1rem;text-align:center;margin-top:0.5rem">
+        <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:0.15rem">End of Month 3</div>
+        <div style="font-size:1.2rem;font-weight:900;color:var(--white);letter-spacing:0.06em">&#9660; GO LIVE</div>
+      </div>
+    </div>
+
+    
+    <div style="padding:1.5rem;background:var(--off-white)">
+      <div>
+        <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--navy);flex-shrink:0"></div>
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--navy)">Post-Launch Program</div>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.3rem;padding-left:1rem;border-left:2px solid var(--navy)">
+          <li style="font-size:0.78rem;color:var(--text)">3,000 words SEO content/mo</li>
+          <li style="font-size:0.78rem;color:var(--text)">Local listing optimizations</li>
+          <li style="font-size:0.78rem;color:var(--text)">Monthly results meetings</li>
+          <li style="font-size:0.78rem;color:var(--text)">Review generation program</li>
+          <li style="font-size:0.78rem;color:var(--text)">GBP optimization &amp; posts</li>
+        </ul>
+        <div style="margin-top:1rem;background:var(--green-light);border-radius:6px;padding:0.6rem 0.75rem;border-left:3px solid var(--green)">
+          <div style="font-size:0.72rem;font-weight:700;color:var(--green)">Rankings begin compounding &#8599;</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+<footer style="background:var(--navy);padding:4rem 3rem;text-align:center">
+  <div style="max-width:800px;margin:0 auto">
+    
+    <div style="font-size:1.8rem;font-weight:800;color:var(--white);line-height:1.3;margin-bottom:0.75rem">
+      Your buyers are searching for embedded engineering expertise right now. Let&rsquo;s make sure they find Simple Innovations first.
+    </div>
+      
+    <div style="font-size:1.1rem;color:rgba(255,255,255,0.8);margin-bottom:2rem">
+      Simple Innovations has the engineering talent, the client wins, and the track record. Abstrakt provides the digital infrastructure to turn that reputation into inbound pipeline.
+    </div>
+    <a href="https://abstraktmg.com/contact" style="display:inline-block;background:var(--white);color:var(--navy);font-weight:700;font-size:0.9rem;padding:0.85rem 2.5rem;border-radius:6px;text-decoration:none;letter-spacing:0.04em;text-transform:uppercase">Get Started &rarr; abstraktmg.com/contact</a>
+    <div style="margin:2.5rem auto 1rem">
+      <div class="amg-logo" style="width:190px;height:24px;margin:0 auto;opacity:0.6"></div>
+    </div>
+    <div style="font-size:0.75rem;color:rgba(255,255,255,0.35);letter-spacing:0.04em">
+      Prepared by Abstrakt Marketing Group &middot; July 2026 &middot; Confidential
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
